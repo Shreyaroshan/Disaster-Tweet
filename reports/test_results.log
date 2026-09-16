@@ -1,0 +1,10 @@
+test_checkpoint_reproduces_saved_predictions (test_project.PipelineTests.test_checkpoint_reproduces_saved_predictions) ... ok
+test_clean_preserves_negation_and_hashtag_word (test_project.PipelineTests.test_clean_preserves_negation_and_hashtag_word) ... ok
+test_no_split_leakage_and_train_only_vocabulary (test_project.PipelineTests.test_no_split_leakage_and_train_only_vocabulary) ... ok
+test_report_metrics_match_predictions (test_project.PipelineTests.test_report_metrics_match_predictions) ... ok
+test_unknown_empty_and_padding (test_project.PipelineTests.test_unknown_empty_and_padding) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.652s
+
+OK

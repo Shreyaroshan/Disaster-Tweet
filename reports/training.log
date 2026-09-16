@@ -1,0 +1,25 @@
+Downloaded/validated 7,613 labeled and 3,263 unlabeled tweets.
+mlp {'epoch': 1, 'train_loss': 0.6652177438046197, 'validation_accuracy': 0.6350293542074364, 'validation_precision': 0.6972477064220184, 'validation_recall': 0.18269230769230768, 'validation_f1': 0.2895238095238095}
+mlp {'epoch': 2, 'train_loss': 0.6028825202578019, 'validation_accuracy': 0.7191780821917808, 'validation_precision': 0.7362637362637363, 'validation_recall': 0.4831730769230769, 'validation_f1': 0.5834542815674891}
+mlp {'epoch': 3, 'train_loss': 0.5341843201179425, 'validation_accuracy': 0.7377690802348337, 'validation_precision': 0.7569444444444444, 'validation_recall': 0.5240384615384616, 'validation_f1': 0.6193181818181818}
+mlp {'epoch': 4, 'train_loss': 0.4643985908236394, 'validation_accuracy': 0.7524461839530333, 'validation_precision': 0.7900355871886121, 'validation_recall': 0.5336538461538461, 'validation_f1': 0.6370157819225251}
+mlp {'epoch': 5, 'train_loss': 0.40046703945415824, 'validation_accuracy': 0.7632093933463796, 'validation_precision': 0.8129496402877698, 'validation_recall': 0.5432692307692307, 'validation_f1': 0.6512968299711815}
+mlp {'epoch': 6, 'train_loss': 0.339246664094725, 'validation_accuracy': 0.761252446183953, 'validation_precision': 0.8006993006993007, 'validation_recall': 0.5504807692307693, 'validation_f1': 0.6524216524216524}
+mlp {'epoch': 7, 'train_loss': 0.280891202293352, 'validation_accuracy': 0.7592954990215264, 'validation_precision': 0.7871621621621622, 'validation_recall': 0.5600961538461539, 'validation_f1': 0.6544943820224719}
+mlp {'epoch': 8, 'train_loss': 0.23041919468583802, 'validation_accuracy': 0.7544031311154599, 'validation_precision': 0.7874564459930313, 'validation_recall': 0.5432692307692307, 'validation_f1': 0.6429587482219061}
+mlp {'epoch': 9, 'train_loss': 0.1958668618707037, 'validation_accuracy': 0.7475538160469667, 'validation_precision': 0.7762237762237763, 'validation_recall': 0.5336538461538461, 'validation_f1': 0.6324786324786325}
+mlp {'epoch': 10, 'train_loss': 0.15376978733067242, 'validation_accuracy': 0.7495107632093934, 'validation_precision': 0.773972602739726, 'validation_recall': 0.5432692307692307, 'validation_f1': 0.6384180790960452}
+mlp {'epoch': 11, 'train_loss': 0.12380049012804431, 'validation_accuracy': 0.7436399217221135, 'validation_precision': 0.775, 'validation_recall': 0.5216346153846154, 'validation_f1': 0.6235632183908046}
+cnn {'epoch': 1, 'train_loss': 0.6440241803413167, 'validation_accuracy': 0.713307240704501, 'validation_precision': 0.7236363636363636, 'validation_recall': 0.47836538461538464, 'validation_f1': 0.5759768451519537}
+cnn {'epoch': 2, 'train_loss': 0.4947599458619484, 'validation_accuracy': 0.7446183953033269, 'validation_precision': 0.7574750830564784, 'validation_recall': 0.5480769230769231, 'validation_f1': 0.6359832635983264}
+cnn {'epoch': 3, 'train_loss': 0.390785780192921, 'validation_accuracy': 0.7397260273972602, 'validation_precision': 0.8073770491803278, 'validation_recall': 0.4735576923076923, 'validation_f1': 0.5969696969696969}
+cnn {'epoch': 4, 'train_loss': 0.29864006596041426, 'validation_accuracy': 0.7534246575342466, 'validation_precision': 0.7808219178082192, 'validation_recall': 0.5480769230769231, 'validation_f1': 0.6440677966101694}
+cnn {'epoch': 5, 'train_loss': 0.22146033127352877, 'validation_accuracy': 0.7436399217221135, 'validation_precision': 0.781021897810219, 'validation_recall': 0.5144230769230769, 'validation_f1': 0.6202898550724638}
+cnn {'epoch': 6, 'train_loss': 0.16836855815766494, 'validation_accuracy': 0.761252446183953, 'validation_precision': 0.7544378698224852, 'validation_recall': 0.6129807692307693, 'validation_f1': 0.6763925729442971}
+cnn {'epoch': 7, 'train_loss': 0.12728564511180174, 'validation_accuracy': 0.7514677103718199, 'validation_precision': 0.7832167832167832, 'validation_recall': 0.5384615384615384, 'validation_f1': 0.6381766381766382}
+cnn {'epoch': 8, 'train_loss': 0.10155005427526478, 'validation_accuracy': 0.7514677103718199, 'validation_precision': 0.7892857142857143, 'validation_recall': 0.53125, 'validation_f1': 0.6350574712643678}
+cnn {'epoch': 9, 'train_loss': 0.08245982972424735, 'validation_accuracy': 0.7436399217221135, 'validation_precision': 0.7789855072463768, 'validation_recall': 0.5168269230769231, 'validation_f1': 0.6213872832369942}
+cnn {'epoch': 10, 'train_loss': 0.06452520441271724, 'validation_accuracy': 0.7446183953033269, 'validation_precision': 0.7719298245614035, 'validation_recall': 0.5288461538461539, 'validation_f1': 0.6276747503566333}
+model  accuracy  precision   recall       f1  validation_f1  best_epoch  epochs_run  training_seconds  parameters device
+  mlp  0.758553   0.778878 0.567308 0.656467       0.654494           7          11          1.607450     1555713    cpu
+  cnn  0.759531   0.751479 0.610577 0.673740       0.676393           6          10         49.363429     1646081    cpu

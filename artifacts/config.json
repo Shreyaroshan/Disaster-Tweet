@@ -1,0 +1,18 @@
+{
+  "seed": 42,
+  "max_length": 64,
+  "max_vocab": 20000,
+  "embedding_dim": 128,
+  "hidden_dim": 64,
+  "filters": 64,
+  "kernels": [
+    3,
+    4,
+    5
+  ],
+  "dropout": 0.4,
+  "batch_size": 64,
+  "learning_rate": 0.001,
+  "epochs": 20,
+  "patience": 4
+}

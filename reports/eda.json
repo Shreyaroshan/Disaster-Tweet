@@ -1,0 +1,38 @@
+{
+  "raw_rows": 7613,
+  "raw_class_counts": {
+    "0": 4342,
+    "1": 3271
+  },
+  "missing_metadata": {
+    "keyword": 61,
+    "location": 2533
+  },
+  "excluded_conflicting_or_empty_rows": 282,
+  "conflicting_normalized_texts": 79,
+  "removed_same_label_duplicates": 516,
+  "retained_rows": 6815,
+  "vocabulary_size": 12089,
+  "splits": {
+    "train": {
+      "rows": 4770,
+      "positive": 1942
+    },
+    "validation": {
+      "rows": 1022,
+      "positive": 416
+    },
+    "test": {
+      "rows": 1023,
+      "positive": 416
+    }
+  },
+  "train_length_percentiles": {
+    "50": 15.0,
+    "90": 23.0,
+    "95": 25.0,
+    "99": 27.0,
+    "100": 33.0
+  },
+  "raw_sha256": "61111c6dc31eaffa34d1e1fa62e2395325c9bc3b38bba1941a5f1ed9b3fa60df"
+}
