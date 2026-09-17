@@ -1,0 +1,7 @@
+{
+  "data/processed/train.csv": "22a5b387397f99155c6f2bfc3ad5ad36bb296ad0e28bd922ff1ce91cfdcb729a",
+  "data/processed/validation.csv": "301f245524688f9476bf90e91792566fc7e759bda0b99e971ceda9500d8b7c1a",
+  "data/processed/test.csv": "5360a1db44ae94f51fb4ac57b7b1faedac08d7f8514d1b53e3c3af773a381057",
+  "artifacts/mlp.pt": "03dd70702f7c24e3237a51356f351bf42b146483006d865258a00c53d278cb41",
+  "reports/results.json": "7352de8b51c141943fe92c008679087161790646e205bd2bfe226cff6bc4f196"
+}

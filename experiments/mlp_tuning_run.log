@@ -1,0 +1,23 @@
+{"trial": "trial_01", "seed": 42, "validation_f1": 0.7099236641221374, "best_epoch": 11, "epochs_run": 17, "training_seconds": 2.4311562910006614}
+{"trial": "trial_02", "seed": 42, "validation_f1": 0.7183462532299741, "best_epoch": 4, "epochs_run": 10, "training_seconds": 1.1037425000031362}
+{"trial": "trial_03", "seed": 42, "validation_f1": 0.664804469273743, "best_epoch": 7, "epochs_run": 13, "training_seconds": 2.2733031249990745}
+{"trial": "trial_04", "seed": 42, "validation_f1": 0.689119170984456, "best_epoch": 4, "epochs_run": 10, "training_seconds": 1.7533737080011633}
+{"trial": "trial_05", "seed": 42, "validation_f1": 0.6580829756795422, "best_epoch": 9, "epochs_run": 15, "training_seconds": 2.677201333000994}
+{"trial": "trial_06", "seed": 42, "validation_f1": 0.696, "best_epoch": 9, "epochs_run": 15, "training_seconds": 4.509951167001418}
+{"trial": "trial_07", "seed": 42, "validation_f1": 0.7070217917675545, "best_epoch": 4, "epochs_run": 10, "training_seconds": 1.0739268329998595}
+{"trial": "trial_08", "seed": 42, "validation_f1": 0.7109471094710947, "best_epoch": 11, "epochs_run": 17, "training_seconds": 1.8800847079983214}
+{"trial": "trial_09", "seed": 42, "validation_f1": 0.679144385026738, "best_epoch": 6, "epochs_run": 12, "training_seconds": 2.0928059159996337}
+{"trial": "trial_10", "seed": 42, "validation_f1": 0.6992665036674817, "best_epoch": 2, "epochs_run": 8, "training_seconds": 1.4040132500012987}
+{"trial": "trial_11", "seed": 42, "validation_f1": 0.679399727148704, "best_epoch": 8, "epochs_run": 14, "training_seconds": 2.508844500000123}
+{"trial": "trial_12", "seed": 42, "validation_f1": 0.7044854881266491, "best_epoch": 6, "epochs_run": 12, "training_seconds": 3.625719666000805}
+{"trial": "trial_02", "seed": 123, "validation_f1": 0.5990783410138248, "best_epoch": 5, "epochs_run": 11, "training_seconds": 1.2001980419991014}
+{"trial": "trial_02", "seed": 2026, "validation_f1": 0.6687830687830688, "best_epoch": 4, "epochs_run": 10, "training_seconds": 1.0859319160008454}
+{"trial": "trial_08", "seed": 123, "validation_f1": 0.6326530612244898, "best_epoch": 12, "epochs_run": 18, "training_seconds": 1.9923764169980132}
+{"trial": "trial_08", "seed": 2026, "validation_f1": 0.6653658536585366, "best_epoch": 9, "epochs_run": 15, "training_seconds": 1.704069209001318}
+{"trial": "trial_01", "seed": 123, "validation_f1": 0.6082949308755761, "best_epoch": 12, "epochs_run": 18, "training_seconds": 1.9891162919993803}
+{"trial": "trial_01", "seed": 2026, "validation_f1": 0.66524064171123, "best_epoch": 5, "epochs_run": 11, "training_seconds": 1.1922603330021957}
+FINAL COMPARISON
+                         model  threshold  accuracy  precision   recall       f1
+                  original_mlp       0.50  0.758553   0.778878 0.567308 0.656467
+     tuned_mlp_fixed_threshold       0.50  0.771261   0.720874 0.713942 0.717391
+tuned_mlp_validation_threshold       0.48  0.766373   0.712230 0.713942 0.713085

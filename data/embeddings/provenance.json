@@ -1,0 +1,14 @@
+{
+  "source": "https://github.com/RaRe-Technologies/gensim-data/releases/download/glove-wiki-gigaword-100/glove-wiki-gigaword-100.gz",
+  "original_source": "https://nlp.stanford.edu/projects/glove/",
+  "license": "https://opendatacommons.org/licenses/pddl/1-0/",
+  "description": "GloVe 6B Wikipedia 2014 + Gigaword, 100 dimensions; Gensim text-format mirror",
+  "expected_md5": "40ec481866001177b8cd4cb0df92924f",
+  "sha256": "4934d4708bf3d65f28fc984dbbfa18af9cbd2505d166a7258a1a957808559b43",
+  "training_vocabulary_sha256": "70bfe6cbb7091d65755eba828375e80e8d5d8e3c26a5733429e3656d64e75cee",
+  "matrix_sha256": "69344de984dc08981f81600f5fa6f558840418465d4e54256ede72508b96112b",
+  "matched_training_words": 10227,
+  "training_vocabulary_words": 12087,
+  "training_token_coverage": 0.8913623220952755,
+  "unknown_policy": "Missing train words: seeded N(0, .05); UNK: mean of matched vectors; PAD: zero."
+}

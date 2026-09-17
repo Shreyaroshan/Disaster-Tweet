@@ -1,0 +1,524 @@
+[
+  {
+    "trial": "trial_01",
+    "seed": 42,
+    "validation_f1": 0.7099236641221374,
+    "best_epoch": 11,
+    "epochs_run": 17,
+    "training_seconds": 2.4311562910006614,
+    "config": {
+      "seed": 42,
+      "max_length": 64,
+      "max_vocab": 20000,
+      "embedding_dim": 64,
+      "hidden_dim": 64,
+      "filters": 64,
+      "kernels": [
+        3,
+        4,
+        5
+      ],
+      "dropout": 0.4,
+      "batch_size": 64,
+      "learning_rate": 0.001,
+      "epochs": 40,
+      "patience": 6,
+      "trial": "trial_01",
+      "weight_decay": 0.01,
+      "class_weighted": false
+    }
+  },
+  {
+    "trial": "trial_02",
+    "seed": 42,
+    "validation_f1": 0.7183462532299741,
+    "best_epoch": 4,
+    "epochs_run": 10,
+    "training_seconds": 1.1037425000031362,
+    "config": {
+      "seed": 42,
+      "max_length": 64,
+      "max_vocab": 20000,
+      "embedding_dim": 64,
+      "hidden_dim": 64,
+      "filters": 64,
+      "kernels": [
+        3,
+        4,
+        5
+      ],
+      "dropout": 0.5,
+      "batch_size": 64,
+      "learning_rate": 0.003,
+      "epochs": 40,
+      "patience": 6,
+      "trial": "trial_02",
+      "weight_decay": 0.01,
+      "class_weighted": false
+    }
+  },
+  {
+    "trial": "trial_03",
+    "seed": 42,
+    "validation_f1": 0.664804469273743,
+    "best_epoch": 7,
+    "epochs_run": 13,
+    "training_seconds": 2.2733031249990745,
+    "config": {
+      "seed": 42,
+      "max_length": 64,
+      "max_vocab": 20000,
+      "embedding_dim": 128,
+      "hidden_dim": 64,
+      "filters": 64,
+      "kernels": [
+        3,
+        4,
+        5
+      ],
+      "dropout": 0.5,
+      "batch_size": 64,
+      "learning_rate": 0.001,
+      "epochs": 40,
+      "patience": 6,
+      "trial": "trial_03",
+      "weight_decay": 0.01,
+      "class_weighted": false
+    }
+  },
+  {
+    "trial": "trial_04",
+    "seed": 42,
+    "validation_f1": 0.689119170984456,
+    "best_epoch": 4,
+    "epochs_run": 10,
+    "training_seconds": 1.7533737080011633,
+    "config": {
+      "seed": 42,
+      "max_length": 64,
+      "max_vocab": 20000,
+      "embedding_dim": 128,
+      "hidden_dim": 64,
+      "filters": 64,
+      "kernels": [
+        3,
+        4,
+        5
+      ],
+      "dropout": 0.5,
+      "batch_size": 64,
+      "learning_rate": 0.003,
+      "epochs": 40,
+      "patience": 6,
+      "trial": "trial_04",
+      "weight_decay": 0.01,
+      "class_weighted": false
+    }
+  },
+  {
+    "trial": "trial_05",
+    "seed": 42,
+    "validation_f1": 0.6580829756795422,
+    "best_epoch": 9,
+    "epochs_run": 15,
+    "training_seconds": 2.677201333000994,
+    "config": {
+      "seed": 42,
+      "max_length": 64,
+      "max_vocab": 20000,
+      "embedding_dim": 128,
+      "hidden_dim": 128,
+      "filters": 64,
+      "kernels": [
+        3,
+        4,
+        5
+      ],
+      "dropout": 0.5,
+      "batch_size": 64,
+      "learning_rate": 0.001,
+      "epochs": 40,
+      "patience": 6,
+      "trial": "trial_05",
+      "weight_decay": 0.05,
+      "class_weighted": false
+    }
+  },
+  {
+    "trial": "trial_06",
+    "seed": 42,
+    "validation_f1": 0.696,
+    "best_epoch": 9,
+    "epochs_run": 15,
+    "training_seconds": 4.509951167001418,
+    "config": {
+      "seed": 42,
+      "max_length": 64,
+      "max_vocab": 20000,
+      "embedding_dim": 256,
+      "hidden_dim": 64,
+      "filters": 64,
+      "kernels": [
+        3,
+        4,
+        5
+      ],
+      "dropout": 0.5,
+      "batch_size": 64,
+      "learning_rate": 0.001,
+      "epochs": 40,
+      "patience": 6,
+      "trial": "trial_06",
+      "weight_decay": 0.01,
+      "class_weighted": false
+    }
+  },
+  {
+    "trial": "trial_07",
+    "seed": 42,
+    "validation_f1": 0.7070217917675545,
+    "best_epoch": 4,
+    "epochs_run": 10,
+    "training_seconds": 1.0739268329998595,
+    "config": {
+      "seed": 42,
+      "max_length": 64,
+      "max_vocab": 20000,
+      "embedding_dim": 64,
+      "hidden_dim": 32,
+      "filters": 64,
+      "kernels": [
+        3,
+        4,
+        5
+      ],
+      "dropout": 0.3,
+      "batch_size": 64,
+      "learning_rate": 0.003,
+      "epochs": 40,
+      "patience": 6,
+      "trial": "trial_07",
+      "weight_decay": 0.05,
+      "class_weighted": true
+    }
+  },
+  {
+    "trial": "trial_08",
+    "seed": 42,
+    "validation_f1": 0.7109471094710947,
+    "best_epoch": 11,
+    "epochs_run": 17,
+    "training_seconds": 1.8800847079983214,
+    "config": {
+      "seed": 42,
+      "max_length": 64,
+      "max_vocab": 20000,
+      "embedding_dim": 64,
+      "hidden_dim": 64,
+      "filters": 64,
+      "kernels": [
+        3,
+        4,
+        5
+      ],
+      "dropout": 0.5,
+      "batch_size": 64,
+      "learning_rate": 0.001,
+      "epochs": 40,
+      "patience": 6,
+      "trial": "trial_08",
+      "weight_decay": 0.01,
+      "class_weighted": true
+    }
+  },
+  {
+    "trial": "trial_09",
+    "seed": 42,
+    "validation_f1": 0.679144385026738,
+    "best_epoch": 6,
+    "epochs_run": 12,
+    "training_seconds": 2.0928059159996337,
+    "config": {
+      "seed": 42,
+      "max_length": 64,
+      "max_vocab": 20000,
+      "embedding_dim": 128,
+      "hidden_dim": 64,
+      "filters": 64,
+      "kernels": [
+        3,
+        4,
+        5
+      ],
+      "dropout": 0.4,
+      "batch_size": 64,
+      "learning_rate": 0.001,
+      "epochs": 40,
+      "patience": 6,
+      "trial": "trial_09",
+      "weight_decay": 0.01,
+      "class_weighted": true
+    }
+  },
+  {
+    "trial": "trial_10",
+    "seed": 42,
+    "validation_f1": 0.6992665036674817,
+    "best_epoch": 2,
+    "epochs_run": 8,
+    "training_seconds": 1.4040132500012987,
+    "config": {
+      "seed": 42,
+      "max_length": 64,
+      "max_vocab": 20000,
+      "embedding_dim": 128,
+      "hidden_dim": 64,
+      "filters": 64,
+      "kernels": [
+        3,
+        4,
+        5
+      ],
+      "dropout": 0.5,
+      "batch_size": 64,
+      "learning_rate": 0.003,
+      "epochs": 40,
+      "patience": 6,
+      "trial": "trial_10",
+      "weight_decay": 0.01,
+      "class_weighted": true
+    }
+  },
+  {
+    "trial": "trial_11",
+    "seed": 42,
+    "validation_f1": 0.679399727148704,
+    "best_epoch": 8,
+    "epochs_run": 14,
+    "training_seconds": 2.508844500000123,
+    "config": {
+      "seed": 42,
+      "max_length": 64,
+      "max_vocab": 20000,
+      "embedding_dim": 128,
+      "hidden_dim": 128,
+      "filters": 64,
+      "kernels": [
+        3,
+        4,
+        5
+      ],
+      "dropout": 0.6,
+      "batch_size": 64,
+      "learning_rate": 0.001,
+      "epochs": 40,
+      "patience": 6,
+      "trial": "trial_11",
+      "weight_decay": 0.05,
+      "class_weighted": true
+    }
+  },
+  {
+    "trial": "trial_12",
+    "seed": 42,
+    "validation_f1": 0.7044854881266491,
+    "best_epoch": 6,
+    "epochs_run": 12,
+    "training_seconds": 3.625719666000805,
+    "config": {
+      "seed": 42,
+      "max_length": 64,
+      "max_vocab": 20000,
+      "embedding_dim": 256,
+      "hidden_dim": 64,
+      "filters": 64,
+      "kernels": [
+        3,
+        4,
+        5
+      ],
+      "dropout": 0.5,
+      "batch_size": 64,
+      "learning_rate": 0.001,
+      "epochs": 40,
+      "patience": 6,
+      "trial": "trial_12",
+      "weight_decay": 0.01,
+      "class_weighted": true
+    }
+  },
+  {
+    "trial": "trial_02",
+    "seed": 123,
+    "validation_f1": 0.5990783410138248,
+    "best_epoch": 5,
+    "epochs_run": 11,
+    "training_seconds": 1.2001980419991014,
+    "config": {
+      "seed": 42,
+      "max_length": 64,
+      "max_vocab": 20000,
+      "embedding_dim": 64,
+      "hidden_dim": 64,
+      "filters": 64,
+      "kernels": [
+        3,
+        4,
+        5
+      ],
+      "dropout": 0.5,
+      "batch_size": 64,
+      "learning_rate": 0.003,
+      "epochs": 40,
+      "patience": 6,
+      "trial": "trial_02",
+      "weight_decay": 0.01,
+      "class_weighted": false
+    }
+  },
+  {
+    "trial": "trial_02",
+    "seed": 2026,
+    "validation_f1": 0.6687830687830688,
+    "best_epoch": 4,
+    "epochs_run": 10,
+    "training_seconds": 1.0859319160008454,
+    "config": {
+      "seed": 42,
+      "max_length": 64,
+      "max_vocab": 20000,
+      "embedding_dim": 64,
+      "hidden_dim": 64,
+      "filters": 64,
+      "kernels": [
+        3,
+        4,
+        5
+      ],
+      "dropout": 0.5,
+      "batch_size": 64,
+      "learning_rate": 0.003,
+      "epochs": 40,
+      "patience": 6,
+      "trial": "trial_02",
+      "weight_decay": 0.01,
+      "class_weighted": false
+    }
+  },
+  {
+    "trial": "trial_08",
+    "seed": 123,
+    "validation_f1": 0.6326530612244898,
+    "best_epoch": 12,
+    "epochs_run": 18,
+    "training_seconds": 1.9923764169980132,
+    "config": {
+      "seed": 42,
+      "max_length": 64,
+      "max_vocab": 20000,
+      "embedding_dim": 64,
+      "hidden_dim": 64,
+      "filters": 64,
+      "kernels": [
+        3,
+        4,
+        5
+      ],
+      "dropout": 0.5,
+      "batch_size": 64,
+      "learning_rate": 0.001,
+      "epochs": 40,
+      "patience": 6,
+      "trial": "trial_08",
+      "weight_decay": 0.01,
+      "class_weighted": true
+    }
+  },
+  {
+    "trial": "trial_08",
+    "seed": 2026,
+    "validation_f1": 0.6653658536585366,
+    "best_epoch": 9,
+    "epochs_run": 15,
+    "training_seconds": 1.704069209001318,
+    "config": {
+      "seed": 42,
+      "max_length": 64,
+      "max_vocab": 20000,
+      "embedding_dim": 64,
+      "hidden_dim": 64,
+      "filters": 64,
+      "kernels": [
+        3,
+        4,
+        5
+      ],
+      "dropout": 0.5,
+      "batch_size": 64,
+      "learning_rate": 0.001,
+      "epochs": 40,
+      "patience": 6,
+      "trial": "trial_08",
+      "weight_decay": 0.01,
+      "class_weighted": true
+    }
+  },
+  {
+    "trial": "trial_01",
+    "seed": 123,
+    "validation_f1": 0.6082949308755761,
+    "best_epoch": 12,
+    "epochs_run": 18,
+    "training_seconds": 1.9891162919993803,
+    "config": {
+      "seed": 42,
+      "max_length": 64,
+      "max_vocab": 20000,
+      "embedding_dim": 64,
+      "hidden_dim": 64,
+      "filters": 64,
+      "kernels": [
+        3,
+        4,
+        5
+      ],
+      "dropout": 0.4,
+      "batch_size": 64,
+      "learning_rate": 0.001,
+      "epochs": 40,
+      "patience": 6,
+      "trial": "trial_01",
+      "weight_decay": 0.01,
+      "class_weighted": false
+    }
+  },
+  {
+    "trial": "trial_01",
+    "seed": 2026,
+    "validation_f1": 0.66524064171123,
+    "best_epoch": 5,
+    "epochs_run": 11,
+    "training_seconds": 1.1922603330021957,
+    "config": {
+      "seed": 42,
+      "max_length": 64,
+      "max_vocab": 20000,
+      "embedding_dim": 64,
+      "hidden_dim": 64,
+      "filters": 64,
+      "kernels": [
+        3,
+        4,
+        5
+      ],
+      "dropout": 0.4,
+      "batch_size": 64,
+      "learning_rate": 0.001,
+      "epochs": 40,
+      "patience": 6,
+      "trial": "trial_01",
+      "weight_decay": 0.01,
+      "class_weighted": false
+    }
+  }
+]

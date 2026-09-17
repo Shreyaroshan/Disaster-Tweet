@@ -1,0 +1,55 @@
+{
+  "winner": "trial_08",
+  "seed": 42,
+  "threshold": 0.48,
+  "ranking": [
+    {
+      "trial": "trial_08",
+      "validation_f1_mean": 0.6696553414513738,
+      "validation_f1_std": 0.03932288489994215
+    },
+    {
+      "trial": "trial_02",
+      "validation_f1_mean": 0.6620692210089559,
+      "validation_f1_std": 0.05991673835457204
+    },
+    {
+      "trial": "trial_01",
+      "validation_f1_mean": 0.6611530789029811,
+      "validation_f1_std": 0.050937520381431144
+    }
+  ],
+  "config": {
+    "seed": 42,
+    "max_length": 64,
+    "max_vocab": 20000,
+    "embedding_dim": 64,
+    "hidden_dim": 64,
+    "filters": 64,
+    "kernels": [
+      3,
+      4,
+      5
+    ],
+    "dropout": 0.5,
+    "batch_size": 64,
+    "learning_rate": 0.001,
+    "epochs": 40,
+    "patience": 6,
+    "trial": "trial_08",
+    "weight_decay": 0.01,
+    "class_weighted": true
+  },
+  "validation_at_0_5": {
+    "accuracy": 0.7700587084148728,
+    "precision": 0.7279596977329975,
+    "recall": 0.6947115384615384,
+    "f1": 0.7109471094710947
+  },
+  "validation_at_selected_threshold": {
+    "accuracy": 0.7700587084148728,
+    "precision": 0.7223587223587223,
+    "recall": 0.7067307692307693,
+    "f1": 0.7144592952612394
+  }
+}

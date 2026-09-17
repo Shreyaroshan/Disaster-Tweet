@@ -1,0 +1,28 @@
+{
+  "trial": "trial_19",
+  "seed": 42,
+  "config": {
+    "family": "tfidf",
+    "characters": false,
+    "hidden": 128,
+    "dropout": 0.4,
+    "weighted": false,
+    "lr": 0.001,
+    "weight_decay": 0.01,
+    "trial": "trial_19",
+    "epochs": 40,
+    "patience": 7,
+    "batch_size": 64
+  },
+  "best_epoch": 5,
+  "epochs_run": 12,
+  "seconds": 5.509632125002099,
+  "parameters": 1513345,
+  "trainable_parameters": 1513345,
+  "validation": {
+    "accuracy": 0.8003913894324853,
+    "precision": 0.8173652694610778,
+    "recall": 0.65625,
+    "f1": 0.728
+  }
+}

@@ -8,3 +8,9 @@ artifacts/*.pt
 .DS_Store
 work/
 references/
+experiments/**/*.pt
+data/embeddings/*.gz
+data/embeddings/*.part
+data/embeddings/*.npy
+experiments/**/*.npy
+experiments/**/*.joblib

@@ -1,0 +1,95 @@
+{
+  "comparison": [
+    {
+      "model": "original_mlp",
+      "threshold": 0.5,
+      "accuracy": 0.7585532746823069,
+      "precision": 0.7788778877887789,
+      "recall": 0.5673076923076923,
+      "f1": 0.6564673157162726
+    },
+    {
+      "model": "tuned_mlp_fixed_threshold",
+      "threshold": 0.5,
+      "accuracy": 0.7712609970674487,
+      "precision": 0.720873786407767,
+      "recall": 0.7139423076923077,
+      "f1": 0.717391304347826
+    },
+    {
+      "model": "tuned_mlp_validation_threshold",
+      "threshold": 0.48,
+      "accuracy": 0.7663734115347018,
+      "precision": 0.7122302158273381,
+      "recall": 0.7139423076923077,
+      "f1": 0.7130852340936374
+    }
+  ],
+  "selection": {
+    "winner": "trial_08",
+    "seed": 42,
+    "threshold": 0.48,
+    "ranking": [
+      {
+        "trial": "trial_08",
+        "validation_f1_mean": 0.6696553414513738,
+        "validation_f1_std": 0.03932288489994215
+      },
+      {
+        "trial": "trial_02",
+        "validation_f1_mean": 0.6620692210089559,
+        "validation_f1_std": 0.05991673835457204
+      },
+      {
+        "trial": "trial_01",
+        "validation_f1_mean": 0.6611530789029811,
+        "validation_f1_std": 0.050937520381431144
+      }
+    ],
+    "config": {
+      "seed": 42,
+      "max_length": 64,
+      "max_vocab": 20000,
+      "embedding_dim": 64,
+      "hidden_dim": 64,
+      "filters": 64,
+      "kernels": [
+        3,
+        4,
+        5
+      ],
+      "dropout": 0.5,
+      "batch_size": 64,
+      "learning_rate": 0.001,
+      "epochs": 40,
+      "patience": 6,
+      "trial": "trial_08",
+      "weight_decay": 0.01,
+      "class_weighted": true
+    },
+    "validation_at_0_5": {
+      "accuracy": 0.7700587084148728,
+      "precision": 0.7279596977329975,
+      "recall": 0.6947115384615384,
+      "f1": 0.7109471094710947
+    },
+    "validation_at_selected_threshold": {
+      "accuracy": 0.7700587084148728,
+      "precision": 0.7223587223587223,
+      "recall": 0.7067307692307693,
+      "f1": 0.7144592952612394
+    }
+  },
+  "paired_bootstrap_95_percent_delta_intervals": {
+    "accuracy": [
+      -0.017595307917888547,
+      0.03714565004887582
+    ],
+    "f1": [
+      0.0217819445760738,
+      0.09471908951603479
+    ]
+  },
+  "bootstrap_caveat": "Tweet-level paired bootstrap conditional on fitted models; event correlation and model-selection/training variability are not represented.",
+  "baseline_preserved": true
+}

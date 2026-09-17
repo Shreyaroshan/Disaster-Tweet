@@ -1,0 +1,5 @@
+                   model  threshold  accuracy  precision   recall       f1
+            Original MLP       0.50  0.758553   0.778878 0.567308 0.656467
+  September 17 tuned MLP       0.48  0.766373   0.712230 0.713942 0.713085
+ Improved MLP (selected)       0.49  0.817204   0.802111 0.730769 0.764780
+Improved MLP (fixed 0.5)       0.50  0.816227   0.804813 0.723558 0.762025

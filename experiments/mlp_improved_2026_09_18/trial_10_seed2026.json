@@ -1,0 +1,30 @@
+{
+  "trial": "trial_10",
+  "seed": 2026,
+  "config": {
+    "family": "glove",
+    "frozen": false,
+    "pool": "mean",
+    "hidden": 64,
+    "dropout": 0.3,
+    "weighted": true,
+    "lr": 0.001,
+    "embedding_lr": 0.0002,
+    "weight_decay": 0.01,
+    "trial": "trial_10",
+    "epochs": 40,
+    "patience": 7,
+    "batch_size": 64
+  },
+  "best_epoch": 11,
+  "epochs_run": 18,
+  "seconds": 3.3504472089989576,
+  "parameters": 1215629,
+  "trainable_parameters": 1215629,
+  "validation": {
+    "accuracy": 0.7896281800391389,
+    "precision": 0.7115789473684211,
+    "recall": 0.8125,
+    "f1": 0.7586980920314254
+  }
+}
