@@ -1,0 +1,24 @@
+{
+  "docx_sha256": "a6bcfe173c68404068b9945552c436f48def609708818ff7680b5ab82db965a9",
+  "pages": 13,
+  "visual_review": "All13 pages inspected at full resolution. Last reference-only revision changed page12; remaining rendered pages pixel-identical to inspected version.",
+  "training_fits": 22,
+  "shared_tests": {
+    "run": 6,
+    "passed": 6,
+    "skipped": 0
+  },
+  "cli_smoke_models": [
+    "mlp",
+    "cnn",
+    "lstm",
+    "transformer"
+  ],
+  "pending_human_steps": [
+    "Confirm name-to-member mapping",
+    "Owner methodology review and actual contribution entries",
+    "All four signatures",
+    "Official Part C template if required",
+    "Institutional plagiarism and AI-content checks"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "source": "https://github.com/RaRe-Technologies/gensim-data/releases/download/glove-twitter-100/glove-twitter-100.gz",
+  "original": "https://nlp.stanford.edu/projects/glove/",
+  "license": "https://opendatacommons.org/licenses/pddl/1-0/",
+  "md5": "b04f7bed38756d64cf55b58ce7e97b15",
+  "sha256": "0b6c9522eccf92887b280bf2754c8e79cb82cb0c953125a75333dbae49d42288",
+  "dimension": 100,
+  "words_matched": 10170,
+  "aliases": {
+    "<url>": "urltoken",
+    "<user>": "usertoken"
+  },
+  "vocabulary_sha256": "70bfe6cbb7091d65755eba828375e80e8d5d8e3c26a5733429e3656d64e75cee",
+  "matrix_sha256": "b582642967d9f903b4c5953212409d9da22033c2d501e2f9eef7f8dd60e82014",
+  "matched_sha256": "bb93bb1cbad4b1d9ff8072940d7e440ebfb12bcbebfe54a29e7875bbf88cfee3"
+}

@@ -1,0 +1,4 @@
+cnn candidate_01_seed42: val accuracy=0.8200, F1=0.7799, epoch=4, seconds=19.5
+cnn candidate_01_seed123: val accuracy=0.8200, F1=0.7711, epoch=7, seconds=25.2
+cnn candidate_01_seed2026: val accuracy=0.8151, F1=0.7747, epoch=4, seconds=19.4
+SELECTED cnn {"ensemble": false, "threshold": 0.5, "accuracy": 0.8199608610567515, "precision": 0.7761904761904762, "recall": 0.7836538461538461, "f1": 0.7799043062200957, "roc_auc": 0.8697321655242447}

@@ -1,0 +1,57 @@
+candidate_01_seed42_fold0: CV accuracy=0.7623, F1=0.6897, best epoch=1, 1.3s
+candidate_01_seed42_fold1: CV accuracy=0.7836, F1=0.7119, best epoch=16, 3.1s
+candidate_01_seed42_fold2: CV accuracy=0.7811, F1=0.7216, best epoch=21, 4.6s
+candidate_02_seed42_fold0: CV accuracy=0.7969, F1=0.7401, best epoch=28, 10.9s
+candidate_02_seed42_fold1: CV accuracy=0.7717, F1=0.7206, best epoch=6, 3.8s
+candidate_02_seed42_fold2: CV accuracy=0.7792, F1=0.7319, best epoch=9, 4.6s
+candidate_03_seed42_fold0: CV accuracy=0.8019, F1=0.7470, best epoch=36, 5.6s
+candidate_03_seed42_fold1: CV accuracy=0.7541, F1=0.6493, best epoch=3, 1.1s
+candidate_03_seed42_fold2: CV accuracy=0.7648, F1=0.7278, best epoch=17, 3.2s
+candidate_04_seed42_fold0: CV accuracy=0.8164, F1=0.7614, best epoch=27, 13.1s
+candidate_04_seed42_fold1: CV accuracy=0.7799, F1=0.7235, best epoch=10, 6.4s
+candidate_04_seed42_fold2: CV accuracy=0.7836, F1=0.7382, best epoch=14, 7.9s
+candidate_05_seed42_fold0: CV accuracy=0.7937, F1=0.7441, best epoch=26, 10.0s
+candidate_05_seed42_fold1: CV accuracy=0.7704, F1=0.7128, best epoch=7, 4.0s
+candidate_05_seed42_fold2: CV accuracy=0.7931, F1=0.7370, best epoch=22, 8.9s
+candidate_06_seed42_fold0: CV accuracy=0.8006, F1=0.7498, best epoch=39, 5.6s
+candidate_06_seed42_fold1: CV accuracy=0.7780, F1=0.7123, best epoch=8, 2.0s
+candidate_06_seed42_fold2: CV accuracy=0.7667, F1=0.7242, best epoch=17, 2.9s
+candidate_07_seed42_fold0: CV accuracy=0.7962, F1=0.7309, best epoch=5, 4.4s
+candidate_07_seed42_fold1: CV accuracy=0.7623, F1=0.6595, best epoch=4, 3.9s
+candidate_07_seed42_fold2: CV accuracy=0.7786, F1=0.7353, best epoch=17, 9.1s
+candidate_08_seed42_fold0: CV accuracy=0.7994, F1=0.7361, best epoch=23, 9.0s
+candidate_08_seed42_fold1: CV accuracy=0.7755, F1=0.6962, best epoch=3, 2.6s
+candidate_08_seed42_fold2: CV accuracy=0.7855, F1=0.7346, best epoch=8, 4.4s
+candidate_01_seed123_fold0: CV accuracy=0.8044, F1=0.7453, best epoch=30, 5.1s
+candidate_01_seed123_fold1: CV accuracy=0.7824, F1=0.7267, best epoch=18, 3.0s
+candidate_01_seed123_fold2: CV accuracy=0.7792, F1=0.7153, best epoch=21, 3.8s
+candidate_04_seed123_fold0: CV accuracy=0.8050, F1=0.7488, best epoch=30, 14.3s
+candidate_04_seed123_fold1: CV accuracy=0.7704, F1=0.7128, best epoch=4, 3.8s
+candidate_04_seed123_fold2: CV accuracy=0.7767, F1=0.7321, best epoch=4, 3.9s
+candidate_08_seed123_fold0: CV accuracy=0.7975, F1=0.7317, best epoch=14, 6.2s
+candidate_08_seed123_fold1: CV accuracy=0.7736, F1=0.7092, best epoch=7, 4.0s
+candidate_08_seed123_fold2: CV accuracy=0.7686, F1=0.7322, best epoch=10, 5.0s
+CV COMPLETE
+[
+  {
+    "name": "candidate_04",
+    "accuracy": 0.7886792452830189,
+    "accuracy_std": 0.017952642632135155,
+    "f1": 0.736144171766891,
+    "runs": 6
+  },
+  {
+    "name": "candidate_08",
+    "accuracy": 0.7833333333333333,
+    "accuracy_std": 0.01294284001714256,
+    "f1": 0.7233316758669021,
+    "runs": 6
+  },
+  {
+    "name": "candidate_01",
+    "accuracy": 0.7821802935010482,
+    "accuracy_std": 0.013434213520055542,
+    "f1": 0.718410907403507,
+    "runs": 6
+  }
+]

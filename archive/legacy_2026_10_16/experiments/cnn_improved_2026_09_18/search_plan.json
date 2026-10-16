@@ -1,0 +1,230 @@
+{
+  "configurations": [
+    {
+      "frozen": true,
+      "filters": 64,
+      "kernels": [
+        2,
+        3,
+        4
+      ],
+      "pool": "max",
+      "dropout": 0.5,
+      "lr": 0.001,
+      "embedding_lr": 0.0002,
+      "weight_decay": 0.01,
+      "epochs": 30,
+      "patience": 6,
+      "batch_size": 64,
+      "trial": "trial_01"
+    },
+    {
+      "frozen": true,
+      "filters": 64,
+      "kernels": [
+        3,
+        4,
+        5
+      ],
+      "pool": "max",
+      "dropout": 0.5,
+      "lr": 0.001,
+      "embedding_lr": 0.0002,
+      "weight_decay": 0.01,
+      "epochs": 30,
+      "patience": 6,
+      "batch_size": 64,
+      "trial": "trial_02"
+    },
+    {
+      "frozen": false,
+      "filters": 64,
+      "kernels": [
+        2,
+        3,
+        4
+      ],
+      "pool": "max",
+      "dropout": 0.5,
+      "lr": 0.001,
+      "embedding_lr": 0.0002,
+      "weight_decay": 0.01,
+      "epochs": 30,
+      "patience": 6,
+      "batch_size": 64,
+      "trial": "trial_03"
+    },
+    {
+      "frozen": false,
+      "filters": 64,
+      "kernels": [
+        3,
+        4,
+        5
+      ],
+      "pool": "max",
+      "dropout": 0.5,
+      "lr": 0.001,
+      "embedding_lr": 0.0002,
+      "weight_decay": 0.01,
+      "epochs": 30,
+      "patience": 6,
+      "batch_size": 64,
+      "trial": "trial_04"
+    },
+    {
+      "frozen": false,
+      "filters": 32,
+      "kernels": [
+        2,
+        3,
+        4
+      ],
+      "pool": "max",
+      "dropout": 0.3,
+      "lr": 0.001,
+      "embedding_lr": 0.0002,
+      "weight_decay": 0.01,
+      "epochs": 30,
+      "patience": 6,
+      "batch_size": 64,
+      "trial": "trial_05"
+    },
+    {
+      "frozen": false,
+      "filters": 32,
+      "kernels": [
+        2,
+        3,
+        4
+      ],
+      "pool": "max",
+      "dropout": 0.5,
+      "lr": 0.001,
+      "embedding_lr": 0.0002,
+      "weight_decay": 0.01,
+      "epochs": 30,
+      "patience": 6,
+      "batch_size": 64,
+      "trial": "trial_06"
+    },
+    {
+      "frozen": false,
+      "filters": 96,
+      "kernels": [
+        2,
+        3,
+        4
+      ],
+      "pool": "max",
+      "dropout": 0.3,
+      "lr": 0.001,
+      "embedding_lr": 0.0002,
+      "weight_decay": 0.01,
+      "epochs": 30,
+      "patience": 6,
+      "batch_size": 64,
+      "trial": "trial_07"
+    },
+    {
+      "frozen": false,
+      "filters": 96,
+      "kernels": [
+        2,
+        3,
+        4
+      ],
+      "pool": "max",
+      "dropout": 0.5,
+      "lr": 0.001,
+      "embedding_lr": 0.0002,
+      "weight_decay": 0.01,
+      "epochs": 30,
+      "patience": 6,
+      "batch_size": 64,
+      "trial": "trial_08"
+    },
+    {
+      "frozen": false,
+      "filters": 64,
+      "kernels": [
+        2,
+        3,
+        4
+      ],
+      "pool": "max_mean",
+      "dropout": 0.3,
+      "lr": 0.001,
+      "embedding_lr": 0.0002,
+      "weight_decay": 0.01,
+      "epochs": 30,
+      "patience": 6,
+      "batch_size": 64,
+      "trial": "trial_09"
+    },
+    {
+      "frozen": false,
+      "filters": 64,
+      "kernels": [
+        2,
+        3,
+        4
+      ],
+      "pool": "max_mean",
+      "dropout": 0.5,
+      "lr": 0.001,
+      "embedding_lr": 0.0002,
+      "weight_decay": 0.01,
+      "epochs": 30,
+      "patience": 6,
+      "batch_size": 64,
+      "trial": "trial_10"
+    },
+    {
+      "frozen": false,
+      "filters": 64,
+      "kernels": [
+        2,
+        3,
+        4
+      ],
+      "pool": "max",
+      "dropout": 0.5,
+      "lr": 0.001,
+      "embedding_lr": 5e-05,
+      "weight_decay": 0.01,
+      "epochs": 30,
+      "patience": 6,
+      "batch_size": 64,
+      "trial": "trial_11"
+    },
+    {
+      "frozen": false,
+      "filters": 64,
+      "kernels": [
+        2,
+        3,
+        4
+      ],
+      "pool": "max",
+      "dropout": 0.5,
+      "lr": 0.001,
+      "embedding_lr": 0.001,
+      "weight_decay": 0.01,
+      "epochs": 30,
+      "patience": 6,
+      "batch_size": 64,
+      "trial": "trial_12"
+    }
+  ],
+  "seeds": [
+    42,
+    123,
+    2026
+  ],
+  "objective": "Validation accuracy first, disaster-class F1 breaks ties.",
+  "screening": "12 configurations at seed 42; checkpoint by validation accuracy/F1 at threshold 0.5.",
+  "confirmation": "Top three by validation accuracy/F1 repeated at seeds 123 and 2026; configuration chosen by mean seed accuracy, then mean F1.",
+  "deployment": "For winning configuration, compare designated seed 42 and equal-weight three-seed probability ensemble over thresholds 0.30..0.65 (step .01). Select validation accuracy, then F1, proximity to .5, then single model.",
+  "test_policy": "Separate evaluate command after selection and checkpoint hashes are saved; do not change selection using test results. Previously reused local test: exploratory comparison."
+}

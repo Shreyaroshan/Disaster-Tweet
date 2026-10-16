@@ -1,0 +1,58 @@
+[
+  {
+    "batch_size": 64,
+    "learning_rate": 0.0005,
+    "embedding_learning_rate": 0.0002,
+    "weight_decay": 0.01,
+    "epochs": 30,
+    "patience": 6,
+    "frozen": false,
+    "dropout": 0.3,
+    "d_model": 128,
+    "heads": 4,
+    "layers": 1,
+    "feedforward": 256
+  },
+  {
+    "batch_size": 64,
+    "learning_rate": 0.0005,
+    "embedding_learning_rate": 0.0002,
+    "weight_decay": 0.01,
+    "epochs": 30,
+    "patience": 6,
+    "frozen": false,
+    "dropout": 0.3,
+    "d_model": 128,
+    "heads": 4,
+    "layers": 2,
+    "feedforward": 256
+  },
+  {
+    "batch_size": 64,
+    "learning_rate": 0.0005,
+    "embedding_learning_rate": 0.0002,
+    "weight_decay": 0.01,
+    "epochs": 30,
+    "patience": 6,
+    "frozen": true,
+    "dropout": 0.3,
+    "d_model": 64,
+    "heads": 4,
+    "layers": 1,
+    "feedforward": 128
+  },
+  {
+    "batch_size": 64,
+    "learning_rate": 0.0005,
+    "embedding_learning_rate": 0.0002,
+    "weight_decay": 0.01,
+    "epochs": 30,
+    "patience": 6,
+    "frozen": true,
+    "dropout": 0.3,
+    "d_model": 128,
+    "heads": 4,
+    "layers": 1,
+    "feedforward": 256
+  }
+]

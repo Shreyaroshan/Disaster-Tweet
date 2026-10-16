@@ -1,0 +1,92 @@
+[
+  {
+    "name": "deploy_seed42",
+    "config": {
+      "hidden": 64,
+      "dropout": 0.5,
+      "lr": 0.001,
+      "embedding_lr": 0.0002,
+      "weight_decay": 0.01,
+      "epochs": 30,
+      "patience": 6,
+      "batch_size": 64,
+      "sources": [
+        "wiki300"
+      ],
+      "frozen": true,
+      "characters": true,
+      "name": "fusion_04"
+    },
+    "seed": 42,
+    "best_epoch": 2,
+    "epochs_run": 8,
+    "seconds": 4.745254541980103,
+    "parameters": 4698749,
+    "validation": {
+      "accuracy": 0.799412915851272,
+      "precision": 0.7971830985915493,
+      "recall": 0.6802884615384616,
+      "f1": 0.7341115434500648
+    }
+  },
+  {
+    "name": "deploy_seed123",
+    "config": {
+      "hidden": 64,
+      "dropout": 0.5,
+      "lr": 0.001,
+      "embedding_lr": 0.0002,
+      "weight_decay": 0.01,
+      "epochs": 30,
+      "patience": 6,
+      "batch_size": 64,
+      "sources": [
+        "wiki300"
+      ],
+      "frozen": true,
+      "characters": true,
+      "name": "fusion_04"
+    },
+    "seed": 123,
+    "best_epoch": 2,
+    "epochs_run": 8,
+    "seconds": 4.844828958972357,
+    "parameters": 4698749,
+    "validation": {
+      "accuracy": 0.8003913894324853,
+      "precision": 0.8081395348837209,
+      "recall": 0.6682692307692307,
+      "f1": 0.7315789473684211
+    }
+  },
+  {
+    "name": "deploy_seed2026",
+    "config": {
+      "hidden": 64,
+      "dropout": 0.5,
+      "lr": 0.001,
+      "embedding_lr": 0.0002,
+      "weight_decay": 0.01,
+      "epochs": 30,
+      "patience": 6,
+      "batch_size": 64,
+      "sources": [
+        "wiki300"
+      ],
+      "frozen": true,
+      "characters": true,
+      "name": "fusion_04"
+    },
+    "seed": 2026,
+    "best_epoch": 2,
+    "epochs_run": 8,
+    "seconds": 4.783543166995514,
+    "parameters": 4698749,
+    "validation": {
+      "accuracy": 0.8062622309197651,
+      "precision": 0.8427672955974843,
+      "recall": 0.6442307692307693,
+      "f1": 0.7302452316076294
+    }
+  }
+]

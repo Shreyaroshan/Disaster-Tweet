@@ -1,0 +1,51 @@
+fusion_01_seed42_fold0: accuracy=0.7975, F1=0.7190, 2.4s
+fusion_01_seed42_fold1: accuracy=0.7918, F1=0.7207, 2.2s
+fusion_01_seed42_fold2: accuracy=0.7730, F1=0.7114, 2.5s
+fusion_01_seed123_fold0: accuracy=0.8038, F1=0.7315, 2.2s
+fusion_01_seed123_fold1: accuracy=0.7931, F1=0.7176, 2.2s
+fusion_01_seed123_fold2: accuracy=0.7767, F1=0.7158, 2.6s
+fusion_02_seed42_fold0: accuracy=0.7969, F1=0.7389, 3.8s
+fusion_02_seed42_fold1: accuracy=0.7943, F1=0.7331, 3.7s
+fusion_02_seed42_fold2: accuracy=0.7855, F1=0.7093, 4.2s
+fusion_02_seed123_fold0: accuracy=0.7931, F1=0.7186, 4.2s
+fusion_02_seed123_fold1: accuracy=0.7931, F1=0.7383, 3.7s
+fusion_02_seed123_fold2: accuracy=0.7906, F1=0.7127, 3.8s
+fusion_03_seed42_fold0: accuracy=0.7962, F1=0.7349, 1.7s
+fusion_03_seed42_fold1: accuracy=0.7969, F1=0.7393, 1.7s
+fusion_03_seed42_fold2: accuracy=0.7830, F1=0.6992, 1.9s
+fusion_03_seed123_fold0: accuracy=0.7969, F1=0.7256, 2.0s
+fusion_03_seed123_fold1: accuracy=0.7950, F1=0.7413, 1.7s
+fusion_03_seed123_fold2: accuracy=0.7899, F1=0.7080, 1.7s
+fusion_04_seed42_fold0: accuracy=0.8019, F1=0.7526, 2.6s
+fusion_04_seed42_fold1: accuracy=0.7918, F1=0.7207, 3.0s
+fusion_04_seed42_fold2: accuracy=0.7912, F1=0.7361, 3.0s
+fusion_04_seed123_fold0: accuracy=0.7931, F1=0.7383, 2.8s
+fusion_04_seed123_fold1: accuracy=0.7918, F1=0.7207, 3.1s
+fusion_04_seed123_fold2: accuracy=0.7956, F1=0.7303, 3.0s
+CV COMPLETE
+[
+  {
+    "name": "fusion_04",
+    "accuracy": 0.7942348008385745,
+    "f1": 0.7330914056622216,
+    "accuracy_std": 0.004064599728528409
+  },
+  {
+    "name": "fusion_03",
+    "accuracy": 0.7929769392033542,
+    "f1": 0.7247112352103975,
+    "accuracy_std": 0.005531970029207063
+  },
+  {
+    "name": "fusion_02",
+    "accuracy": 0.7922431865828092,
+    "f1": 0.7251249948035413,
+    "accuracy_std": 0.0038701822253129807
+  },
+  {
+    "name": "fusion_01",
+    "accuracy": 0.789308176100629,
+    "f1": 0.719332541878757,
+    "accuracy_std": 0.01201899792260755
+  }
+]

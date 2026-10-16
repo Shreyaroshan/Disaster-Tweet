@@ -1,0 +1,746 @@
+[
+  {
+    "name": "fusion_01_seed42_fold0",
+    "config": {
+      "hidden": 64,
+      "dropout": 0.5,
+      "lr": 0.001,
+      "embedding_lr": 0.0002,
+      "weight_decay": 0.01,
+      "epochs": 30,
+      "patience": 6,
+      "batch_size": 64,
+      "sources": [
+        "wiki100"
+      ],
+      "frozen": false,
+      "characters": false,
+      "name": "fusion_01"
+    },
+    "seed": 42,
+    "best_epoch": 3,
+    "epochs_run": 9,
+    "seconds": 2.3674443750060163,
+    "parameters": 1287213,
+    "fold": 0,
+    "assessment": {
+      "accuracy": 0.7974842767295598,
+      "precision": 0.8256513026052105,
+      "recall": 0.6367851622874807,
+      "f1": 0.7190226876090751
+    }
+  },
+  {
+    "name": "fusion_01_seed42_fold1",
+    "config": {
+      "hidden": 64,
+      "dropout": 0.5,
+      "lr": 0.001,
+      "embedding_lr": 0.0002,
+      "weight_decay": 0.01,
+      "epochs": 30,
+      "patience": 6,
+      "batch_size": 64,
+      "sources": [
+        "wiki100"
+      ],
+      "frozen": false,
+      "characters": false,
+      "name": "fusion_01"
+    },
+    "seed": 42,
+    "best_epoch": 3,
+    "epochs_run": 9,
+    "seconds": 2.2383357909857295,
+    "parameters": 1292673,
+    "fold": 1,
+    "assessment": {
+      "accuracy": 0.7918238993710692,
+      "precision": 0.7936802973977695,
+      "recall": 0.6599690880989181,
+      "f1": 0.7206751054852321
+    }
+  },
+  {
+    "name": "fusion_01_seed42_fold2",
+    "config": {
+      "hidden": 64,
+      "dropout": 0.5,
+      "lr": 0.001,
+      "embedding_lr": 0.0002,
+      "weight_decay": 0.01,
+      "epochs": 30,
+      "patience": 6,
+      "batch_size": 64,
+      "sources": [
+        "wiki100"
+      ],
+      "frozen": false,
+      "characters": false,
+      "name": "fusion_01"
+    },
+    "seed": 42,
+    "best_epoch": 4,
+    "epochs_run": 10,
+    "seconds": 2.5343566660303622,
+    "parameters": 1301793,
+    "fold": 2,
+    "assessment": {
+      "accuracy": 0.7729559748427673,
+      "precision": 0.7379767827529021,
+      "recall": 0.6867283950617284,
+      "f1": 0.7114308553157475
+    }
+  },
+  {
+    "name": "fusion_01_seed123_fold0",
+    "config": {
+      "hidden": 64,
+      "dropout": 0.5,
+      "lr": 0.001,
+      "embedding_lr": 0.0002,
+      "weight_decay": 0.01,
+      "epochs": 30,
+      "patience": 6,
+      "batch_size": 64,
+      "sources": [
+        "wiki100"
+      ],
+      "frozen": false,
+      "characters": false,
+      "name": "fusion_01"
+    },
+    "seed": 123,
+    "best_epoch": 3,
+    "epochs_run": 9,
+    "seconds": 2.2310482499888167,
+    "parameters": 1287213,
+    "fold": 0,
+    "assessment": {
+      "accuracy": 0.8037735849056604,
+      "precision": 0.8252427184466019,
+      "recall": 0.6568778979907264,
+      "f1": 0.7314974182444062
+    }
+  },
+  {
+    "name": "fusion_01_seed123_fold1",
+    "config": {
+      "hidden": 64,
+      "dropout": 0.5,
+      "lr": 0.001,
+      "embedding_lr": 0.0002,
+      "weight_decay": 0.01,
+      "epochs": 30,
+      "patience": 6,
+      "batch_size": 64,
+      "sources": [
+        "wiki100"
+      ],
+      "frozen": false,
+      "characters": false,
+      "name": "fusion_01"
+    },
+    "seed": 123,
+    "best_epoch": 3,
+    "epochs_run": 9,
+    "seconds": 2.2269027499714866,
+    "parameters": 1292673,
+    "fold": 1,
+    "assessment": {
+      "accuracy": 0.7930817610062894,
+      "precision": 0.806949806949807,
+      "recall": 0.6460587326120556,
+      "f1": 0.7175965665236052
+    }
+  },
+  {
+    "name": "fusion_01_seed123_fold2",
+    "config": {
+      "hidden": 64,
+      "dropout": 0.5,
+      "lr": 0.001,
+      "embedding_lr": 0.0002,
+      "weight_decay": 0.01,
+      "epochs": 30,
+      "patience": 6,
+      "batch_size": 64,
+      "sources": [
+        "wiki100"
+      ],
+      "frozen": false,
+      "characters": false,
+      "name": "fusion_01"
+    },
+    "seed": 123,
+    "best_epoch": 5,
+    "epochs_run": 11,
+    "seconds": 2.621873833006248,
+    "parameters": 1301793,
+    "fold": 2,
+    "assessment": {
+      "accuracy": 0.7767295597484277,
+      "precision": 0.7437603993344426,
+      "recall": 0.6898148148148148,
+      "f1": 0.7157726180944756
+    }
+  },
+  {
+    "name": "fusion_02_seed42_fold0",
+    "config": {
+      "hidden": 64,
+      "dropout": 0.5,
+      "lr": 0.001,
+      "embedding_lr": 0.0002,
+      "weight_decay": 0.01,
+      "epochs": 30,
+      "patience": 6,
+      "batch_size": 64,
+      "sources": [
+        "wiki300"
+      ],
+      "frozen": false,
+      "characters": false,
+      "name": "fusion_02"
+    },
+    "seed": 42,
+    "best_epoch": 3,
+    "epochs_run": 9,
+    "seconds": 3.8087775000021793,
+    "parameters": 2996613,
+    "fold": 0,
+    "assessment": {
+      "accuracy": 0.7968553459119497,
+      "precision": 0.7745762711864407,
+      "recall": 0.7063369397217929,
+      "f1": 0.7388843977364592
+    }
+  },
+  {
+    "name": "fusion_02_seed42_fold1",
+    "config": {
+      "hidden": 64,
+      "dropout": 0.5,
+      "lr": 0.001,
+      "embedding_lr": 0.0002,
+      "weight_decay": 0.01,
+      "epochs": 30,
+      "patience": 6,
+      "batch_size": 64,
+      "sources": [
+        "wiki300"
+      ],
+      "frozen": false,
+      "characters": false,
+      "name": "fusion_02"
+    },
+    "seed": 42,
+    "best_epoch": 3,
+    "epochs_run": 9,
+    "seconds": 3.729623207997065,
+    "parameters": 3007873,
+    "fold": 1,
+    "assessment": {
+      "accuracy": 0.7943396226415095,
+      "precision": 0.7768166089965398,
+      "recall": 0.6939721792890263,
+      "f1": 0.7330612244897959
+    }
+  },
+  {
+    "name": "fusion_02_seed42_fold2",
+    "config": {
+      "hidden": 64,
+      "dropout": 0.5,
+      "lr": 0.001,
+      "embedding_lr": 0.0002,
+      "weight_decay": 0.01,
+      "epochs": 30,
+      "patience": 6,
+      "batch_size": 64,
+      "sources": [
+        "wiki300"
+      ],
+      "frozen": false,
+      "characters": false,
+      "name": "fusion_02"
+    },
+    "seed": 42,
+    "best_epoch": 4,
+    "epochs_run": 10,
+    "seconds": 4.1858518330263905,
+    "parameters": 3066593,
+    "fold": 2,
+    "assessment": {
+      "accuracy": 0.7855345911949686,
+      "precision": 0.7923809523809524,
+      "recall": 0.6419753086419753,
+      "f1": 0.7092924126172208
+    }
+  },
+  {
+    "name": "fusion_02_seed123_fold0",
+    "config": {
+      "hidden": 64,
+      "dropout": 0.5,
+      "lr": 0.001,
+      "embedding_lr": 0.0002,
+      "weight_decay": 0.01,
+      "epochs": 30,
+      "patience": 6,
+      "batch_size": 64,
+      "sources": [
+        "wiki300"
+      ],
+      "frozen": false,
+      "characters": false,
+      "name": "fusion_02"
+    },
+    "seed": 123,
+    "best_epoch": 4,
+    "epochs_run": 10,
+    "seconds": 4.223942541982979,
+    "parameters": 2996613,
+    "fold": 0,
+    "assessment": {
+      "accuracy": 0.7930817610062894,
+      "precision": 0.8045977011494253,
+      "recall": 0.6491499227202473,
+      "f1": 0.718562874251497
+    }
+  },
+  {
+    "name": "fusion_02_seed123_fold1",
+    "config": {
+      "hidden": 64,
+      "dropout": 0.5,
+      "lr": 0.001,
+      "embedding_lr": 0.0002,
+      "weight_decay": 0.01,
+      "epochs": 30,
+      "patience": 6,
+      "batch_size": 64,
+      "sources": [
+        "wiki300"
+      ],
+      "frozen": false,
+      "characters": false,
+      "name": "fusion_02"
+    },
+    "seed": 123,
+    "best_epoch": 3,
+    "epochs_run": 9,
+    "seconds": 3.715769457980059,
+    "parameters": 3007873,
+    "fold": 1,
+    "assessment": {
+      "accuracy": 0.7930817610062894,
+      "precision": 0.760655737704918,
+      "recall": 0.7171561051004637,
+      "f1": 0.7382657120127287
+    }
+  },
+  {
+    "name": "fusion_02_seed123_fold2",
+    "config": {
+      "hidden": 64,
+      "dropout": 0.5,
+      "lr": 0.001,
+      "embedding_lr": 0.0002,
+      "weight_decay": 0.01,
+      "epochs": 30,
+      "patience": 6,
+      "batch_size": 64,
+      "sources": [
+        "wiki300"
+      ],
+      "frozen": false,
+      "characters": false,
+      "name": "fusion_02"
+    },
+    "seed": 123,
+    "best_epoch": 3,
+    "epochs_run": 9,
+    "seconds": 3.792769916006364,
+    "parameters": 3066593,
+    "fold": 2,
+    "assessment": {
+      "accuracy": 0.7905660377358491,
+      "precision": 0.8082191780821918,
+      "recall": 0.6373456790123457,
+      "f1": 0.7126833477135461
+    }
+  },
+  {
+    "name": "fusion_03_seed42_fold0",
+    "config": {
+      "hidden": 64,
+      "dropout": 0.5,
+      "lr": 0.001,
+      "embedding_lr": 0.0002,
+      "weight_decay": 0.01,
+      "epochs": 30,
+      "patience": 6,
+      "batch_size": 64,
+      "sources": [
+        "wiki300"
+      ],
+      "frozen": true,
+      "characters": false,
+      "name": "fusion_03"
+    },
+    "seed": 42,
+    "best_epoch": 3,
+    "epochs_run": 9,
+    "seconds": 1.7333151249913499,
+    "parameters": 2996613,
+    "fold": 0,
+    "assessment": {
+      "accuracy": 0.7962264150943397,
+      "precision": 0.7808695652173913,
+      "recall": 0.6939721792890263,
+      "f1": 0.734860883797054
+    }
+  },
+  {
+    "name": "fusion_03_seed42_fold1",
+    "config": {
+      "hidden": 64,
+      "dropout": 0.5,
+      "lr": 0.001,
+      "embedding_lr": 0.0002,
+      "weight_decay": 0.01,
+      "epochs": 30,
+      "patience": 6,
+      "batch_size": 64,
+      "sources": [
+        "wiki300"
+      ],
+      "frozen": true,
+      "characters": false,
+      "name": "fusion_03"
+    },
+    "seed": 42,
+    "best_epoch": 3,
+    "epochs_run": 9,
+    "seconds": 1.7265549580333754,
+    "parameters": 3007873,
+    "fold": 1,
+    "assessment": {
+      "accuracy": 0.7968553459119497,
+      "precision": 0.7736486486486487,
+      "recall": 0.7078825347758887,
+      "f1": 0.7393058918482648
+    }
+  },
+  {
+    "name": "fusion_03_seed42_fold2",
+    "config": {
+      "hidden": 64,
+      "dropout": 0.5,
+      "lr": 0.001,
+      "embedding_lr": 0.0002,
+      "weight_decay": 0.01,
+      "epochs": 30,
+      "patience": 6,
+      "batch_size": 64,
+      "sources": [
+        "wiki300"
+      ],
+      "frozen": true,
+      "characters": false,
+      "name": "fusion_03"
+    },
+    "seed": 42,
+    "best_epoch": 4,
+    "epochs_run": 10,
+    "seconds": 1.9005257080425508,
+    "parameters": 3066593,
+    "fold": 2,
+    "assessment": {
+      "accuracy": 0.7830188679245284,
+      "precision": 0.8036072144288577,
+      "recall": 0.6188271604938271,
+      "f1": 0.6992153443766347
+    }
+  },
+  {
+    "name": "fusion_03_seed123_fold0",
+    "config": {
+      "hidden": 64,
+      "dropout": 0.5,
+      "lr": 0.001,
+      "embedding_lr": 0.0002,
+      "weight_decay": 0.01,
+      "epochs": 30,
+      "patience": 6,
+      "batch_size": 64,
+      "sources": [
+        "wiki300"
+      ],
+      "frozen": true,
+      "characters": false,
+      "name": "fusion_03"
+    },
+    "seed": 123,
+    "best_epoch": 4,
+    "epochs_run": 10,
+    "seconds": 2.0209565419936553,
+    "parameters": 2996613,
+    "fold": 0,
+    "assessment": {
+      "accuracy": 0.7968553459119497,
+      "precision": 0.8056603773584906,
+      "recall": 0.6599690880989181,
+      "f1": 0.7255734919286321
+    }
+  },
+  {
+    "name": "fusion_03_seed123_fold1",
+    "config": {
+      "hidden": 64,
+      "dropout": 0.5,
+      "lr": 0.001,
+      "embedding_lr": 0.0002,
+      "weight_decay": 0.01,
+      "epochs": 30,
+      "patience": 6,
+      "batch_size": 64,
+      "sources": [
+        "wiki300"
+      ],
+      "frozen": true,
+      "characters": false,
+      "name": "fusion_03"
+    },
+    "seed": 123,
+    "best_epoch": 3,
+    "epochs_run": 9,
+    "seconds": 1.727121916017495,
+    "parameters": 3007873,
+    "fold": 1,
+    "assessment": {
+      "accuracy": 0.7949685534591195,
+      "precision": 0.7618270799347472,
+      "recall": 0.7217928902627512,
+      "f1": 0.7412698412698413
+    }
+  },
+  {
+    "name": "fusion_03_seed123_fold2",
+    "config": {
+      "hidden": 64,
+      "dropout": 0.5,
+      "lr": 0.001,
+      "embedding_lr": 0.0002,
+      "weight_decay": 0.01,
+      "epochs": 30,
+      "patience": 6,
+      "batch_size": 64,
+      "sources": [
+        "wiki300"
+      ],
+      "frozen": true,
+      "characters": false,
+      "name": "fusion_03"
+    },
+    "seed": 123,
+    "best_epoch": 3,
+    "epochs_run": 9,
+    "seconds": 1.7360860829940066,
+    "parameters": 3066593,
+    "fold": 2,
+    "assessment": {
+      "accuracy": 0.789937106918239,
+      "precision": 0.8165322580645161,
+      "recall": 0.625,
+      "f1": 0.708041958041958
+    }
+  },
+  {
+    "name": "fusion_04_seed42_fold0",
+    "config": {
+      "hidden": 64,
+      "dropout": 0.5,
+      "lr": 0.001,
+      "embedding_lr": 0.0002,
+      "weight_decay": 0.01,
+      "epochs": 30,
+      "patience": 6,
+      "batch_size": 64,
+      "sources": [
+        "wiki300"
+      ],
+      "frozen": true,
+      "characters": true,
+      "name": "fusion_04"
+    },
+    "seed": 42,
+    "best_epoch": 2,
+    "epochs_run": 8,
+    "seconds": 2.5549787909840234,
+    "parameters": 3508613,
+    "fold": 0,
+    "assessment": {
+      "accuracy": 0.8018867924528302,
+      "precision": 0.7651757188498403,
+      "recall": 0.740340030911901,
+      "f1": 0.7525530243519246
+    }
+  },
+  {
+    "name": "fusion_04_seed42_fold1",
+    "config": {
+      "hidden": 64,
+      "dropout": 0.5,
+      "lr": 0.001,
+      "embedding_lr": 0.0002,
+      "weight_decay": 0.01,
+      "epochs": 30,
+      "patience": 6,
+      "batch_size": 64,
+      "sources": [
+        "wiki300"
+      ],
+      "frozen": true,
+      "characters": true,
+      "name": "fusion_04"
+    },
+    "seed": 42,
+    "best_epoch": 3,
+    "epochs_run": 9,
+    "seconds": 3.048300124995876,
+    "parameters": 3519873,
+    "fold": 1,
+    "assessment": {
+      "accuracy": 0.7918238993710692,
+      "precision": 0.7936802973977695,
+      "recall": 0.6599690880989181,
+      "f1": 0.7206751054852321
+    }
+  },
+  {
+    "name": "fusion_04_seed42_fold2",
+    "config": {
+      "hidden": 64,
+      "dropout": 0.5,
+      "lr": 0.001,
+      "embedding_lr": 0.0002,
+      "weight_decay": 0.01,
+      "epochs": 30,
+      "patience": 6,
+      "batch_size": 64,
+      "sources": [
+        "wiki300"
+      ],
+      "frozen": true,
+      "characters": true,
+      "name": "fusion_04"
+    },
+    "seed": 42,
+    "best_epoch": 3,
+    "epochs_run": 9,
+    "seconds": 3.006355582969263,
+    "parameters": 3578593,
+    "fold": 2,
+    "assessment": {
+      "accuracy": 0.7911949685534592,
+      "precision": 0.759016393442623,
+      "recall": 0.7145061728395061,
+      "f1": 0.7360890302066773
+    }
+  },
+  {
+    "name": "fusion_04_seed123_fold0",
+    "config": {
+      "hidden": 64,
+      "dropout": 0.5,
+      "lr": 0.001,
+      "embedding_lr": 0.0002,
+      "weight_decay": 0.01,
+      "epochs": 30,
+      "patience": 6,
+      "batch_size": 64,
+      "sources": [
+        "wiki300"
+      ],
+      "frozen": true,
+      "characters": true,
+      "name": "fusion_04"
+    },
+    "seed": 123,
+    "best_epoch": 2,
+    "epochs_run": 8,
+    "seconds": 2.784490874968469,
+    "parameters": 3508613,
+    "fold": 0,
+    "assessment": {
+      "accuracy": 0.7930817610062894,
+      "precision": 0.760655737704918,
+      "recall": 0.7171561051004637,
+      "f1": 0.7382657120127287
+    }
+  },
+  {
+    "name": "fusion_04_seed123_fold1",
+    "config": {
+      "hidden": 64,
+      "dropout": 0.5,
+      "lr": 0.001,
+      "embedding_lr": 0.0002,
+      "weight_decay": 0.01,
+      "epochs": 30,
+      "patience": 6,
+      "batch_size": 64,
+      "sources": [
+        "wiki300"
+      ],
+      "frozen": true,
+      "characters": true,
+      "name": "fusion_04"
+    },
+    "seed": 123,
+    "best_epoch": 3,
+    "epochs_run": 9,
+    "seconds": 3.0769373329821974,
+    "parameters": 3519873,
+    "fold": 1,
+    "assessment": {
+      "accuracy": 0.7918238993710692,
+      "precision": 0.7936802973977695,
+      "recall": 0.6599690880989181,
+      "f1": 0.7206751054852321
+    }
+  },
+  {
+    "name": "fusion_04_seed123_fold2",
+    "config": {
+      "hidden": 64,
+      "dropout": 0.5,
+      "lr": 0.001,
+      "embedding_lr": 0.0002,
+      "weight_decay": 0.01,
+      "epochs": 30,
+      "patience": 6,
+      "batch_size": 64,
+      "sources": [
+        "wiki300"
+      ],
+      "frozen": true,
+      "characters": true,
+      "name": "fusion_04"
+    },
+    "seed": 123,
+    "best_epoch": 3,
+    "epochs_run": 9,
+    "seconds": 3.0401799579849467,
+    "parameters": 3578593,
+    "fold": 2,
+    "assessment": {
+      "accuracy": 0.7955974842767296,
+      "precision": 0.7899461400359067,
+      "recall": 0.6790123456790124,
+      "f1": 0.7302904564315352
+    }
+  }
+]

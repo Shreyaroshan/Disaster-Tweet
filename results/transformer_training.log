@@ -1,0 +1,9 @@
+transformer candidate_01_seed42: val accuracy=0.8033, F1=0.7575, epoch=4, seconds=12.8
+transformer candidate_02_seed42: val accuracy=0.8004, F1=0.7330, epoch=6, seconds=26.4
+transformer candidate_03_seed42: val accuracy=0.8043, F1=0.7368, epoch=15, seconds=16.3
+transformer candidate_04_seed42: val accuracy=0.8102, F1=0.7275, epoch=10, seconds=18.4
+transformer candidate_04_seed123: val accuracy=0.8112, F1=0.7423, epoch=4, seconds=12.1
+transformer candidate_04_seed2026: val accuracy=0.8033, F1=0.7295, epoch=6, seconds=14.1
+transformer candidate_03_seed123: val accuracy=0.8082, F1=0.7358, epoch=8, seconds=10.9
+transformer candidate_03_seed2026: val accuracy=0.8141, F1=0.7473, epoch=11, seconds=13.9
+SELECTED transformer {"ensemble": false, "threshold": 0.47, "accuracy": 0.8111545988258317, "precision": 0.8140845070422535, "recall": 0.6947115384615384, "f1": 0.7496757457846952, "roc_auc": 0.8706980674028941}

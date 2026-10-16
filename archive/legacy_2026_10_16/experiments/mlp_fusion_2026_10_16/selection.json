@@ -1,0 +1,49 @@
+{
+  "config": {
+    "hidden": 64,
+    "dropout": 0.5,
+    "lr": 0.001,
+    "embedding_lr": 0.0002,
+    "weight_decay": 0.01,
+    "epochs": 30,
+    "patience": 6,
+    "batch_size": 64,
+    "sources": [
+      "wiki300"
+    ],
+    "frozen": true,
+    "characters": true,
+    "name": "fusion_04"
+  },
+  "seeds": [
+    42,
+    123,
+    2026
+  ],
+  "threshold": 0.5,
+  "ensemble": true,
+  "validation": {
+    "ensemble": true,
+    "threshold": 0.5,
+    "accuracy": 0.8052837573385518,
+    "precision": 0.8238805970149253,
+    "recall": 0.6634615384615384,
+    "f1": 0.7350199733688415
+  },
+  "previous_validation": {
+    "threshold": 0.49,
+    "accuracy": 0.8180039138943248,
+    "precision": 0.8074866310160428,
+    "recall": 0.7259615384615384,
+    "f1": 0.7645569620253164
+  },
+  "validation_gate_passed": false,
+  "artifact_sha256": {
+    "deploy_seed42.pt": "a2a3cf1d687d2af4a1a32ba7b03dca77515a6ebc6f0f59d1425fd79e46ea1d7c",
+    "deploy_seed42_vectorizer.joblib": "2449c7ba66f172d1888b7632f6a11448a095c736dc2640550d6e1a87bce2457b",
+    "deploy_seed123.pt": "9f4855a7479328d5a0f47f6c62a93de567e2a2b3f359d3fab027e05f98e38904",
+    "deploy_seed123_vectorizer.joblib": "2449c7ba66f172d1888b7632f6a11448a095c736dc2640550d6e1a87bce2457b",
+    "deploy_seed2026.pt": "4c9c3f35df3600721a1e88af2f6111d884118ff6b9e0587513acaa712a8deddf",
+    "deploy_seed2026_vectorizer.joblib": "2449c7ba66f172d1888b7632f6a11448a095c736dc2640550d6e1a87bce2457b"
+  }
+}

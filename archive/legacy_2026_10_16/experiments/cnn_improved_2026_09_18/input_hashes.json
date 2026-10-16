@@ -1,0 +1,10 @@
+{
+  "data/processed/train.csv": "22a5b387397f99155c6f2bfc3ad5ad36bb296ad0e28bd922ff1ce91cfdcb729a",
+  "data/processed/validation.csv": "301f245524688f9476bf90e91792566fc7e759bda0b99e971ceda9500d8b7c1a",
+  "data/processed/test.csv": "5360a1db44ae94f51fb4ac57b7b1faedac08d7f8514d1b53e3c3af773a381057",
+  "data/processed/vocabulary.json": "70bfe6cbb7091d65755eba828375e80e8d5d8e3c26a5733429e3656d64e75cee",
+  "artifacts/cnn.pt": "69ae4fe7ab6a62a15f96049100fe05a9f85800d6e3f40e8750ac180c6780c217",
+  "artifacts/mlp.pt": "03dd70702f7c24e3237a51356f351bf42b146483006d865258a00c53d278cb41",
+  "reports/results.json": "7352de8b51c141943fe92c008679087161790646e205bd2bfe226cff6bc4f196",
+  "experiments/mlp_improved_2026_09_18/selection.json": "f69626f89b4e879529ae1c82686d20d254621f10d461d6676cede1c3218397f5"
+}

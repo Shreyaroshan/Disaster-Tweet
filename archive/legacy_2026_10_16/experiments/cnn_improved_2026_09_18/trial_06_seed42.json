@@ -1,0 +1,32 @@
+{
+  "trial": "trial_06",
+  "seed": 42,
+  "config": {
+    "frozen": false,
+    "filters": 32,
+    "kernels": [
+      2,
+      3,
+      4
+    ],
+    "pool": "max",
+    "dropout": 0.5,
+    "lr": 0.001,
+    "embedding_lr": 0.0002,
+    "weight_decay": 0.01,
+    "epochs": 30,
+    "patience": 6,
+    "batch_size": 64,
+    "trial": "trial_06"
+  },
+  "best_epoch": 9,
+  "epochs_run": 15,
+  "seconds": 22.23564725000324,
+  "parameters": 1237893,
+  "validation": {
+    "accuracy": 0.8111545988258317,
+    "precision": 0.8105849582172702,
+    "recall": 0.6995192307692307,
+    "f1": 0.7509677419354839
+  }
+}

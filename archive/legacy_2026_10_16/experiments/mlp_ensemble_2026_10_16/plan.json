@@ -1,0 +1,12 @@
+{
+  "context": "Final bounded adaptive ensemble check after individual candidates failed to improve validation/test. Includes the unchanged September model as a control.",
+  "members": [
+    "september",
+    "dual_embedding",
+    "feature_fusion"
+  ],
+  "weights": "Nonnegative weights in quarter increments summing to 1 (15 combinations).",
+  "threshold": "0.40..0.65 step .01; validation accuracy, then F1, then higher weight on September model, then proximity to .5.",
+  "promotion": "Validation accuracy and F1 must both match or exceed the September model; otherwise retain September.",
+  "test": "One final exploratory comparison after saving selection; no further experiments based on this test. Reused test and validation cannot provide independent confirmation."
+}

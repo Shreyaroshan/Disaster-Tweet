@@ -1,0 +1,167 @@
+[
+  {
+    "name": "deploy_seed42",
+    "config": {
+      "hidden": 128,
+      "dropout": 0.5,
+      "idf_pool": false,
+      "lr": 0.001,
+      "embedding_lr": 0.0002,
+      "weight_decay": 0.01,
+      "epochs": 40,
+      "patience": 6,
+      "batch_size": 64,
+      "sources": [
+        "wiki300",
+        "twitter100"
+      ],
+      "name": "candidate_04"
+    },
+    "seed": 42,
+    "best_epoch": 19,
+    "epochs_run": 25,
+    "train_rows": 4770,
+    "stopping_rows": 1022,
+    "seconds": 19.55032670800574,
+    "vocabulary_size": 12089,
+    "parameters": 4939857,
+    "validation": {
+      "accuracy": 0.8180039138943248,
+      "precision": 0.7804878048780488,
+      "recall": 0.7692307692307693,
+      "f1": 0.774818401937046
+    }
+  },
+  {
+    "name": "deploy_seed123",
+    "config": {
+      "hidden": 128,
+      "dropout": 0.5,
+      "idf_pool": false,
+      "lr": 0.001,
+      "embedding_lr": 0.0002,
+      "weight_decay": 0.01,
+      "epochs": 40,
+      "patience": 6,
+      "batch_size": 64,
+      "sources": [
+        "wiki300",
+        "twitter100"
+      ],
+      "name": "candidate_04"
+    },
+    "seed": 123,
+    "best_epoch": 26,
+    "epochs_run": 32,
+    "train_rows": 4770,
+    "stopping_rows": 1022,
+    "seconds": 24.55996587499976,
+    "vocabulary_size": 12089,
+    "parameters": 4939857,
+    "validation": {
+      "accuracy": 0.815068493150685,
+      "precision": 0.8075880758807588,
+      "recall": 0.7163461538461539,
+      "f1": 0.759235668789809
+    }
+  },
+  {
+    "name": "deploy_seed2026",
+    "config": {
+      "hidden": 128,
+      "dropout": 0.5,
+      "idf_pool": false,
+      "lr": 0.001,
+      "embedding_lr": 0.0002,
+      "weight_decay": 0.01,
+      "epochs": 40,
+      "patience": 6,
+      "batch_size": 64,
+      "sources": [
+        "wiki300",
+        "twitter100"
+      ],
+      "name": "candidate_04"
+    },
+    "seed": 2026,
+    "best_epoch": 28,
+    "epochs_run": 34,
+    "train_rows": 4770,
+    "stopping_rows": 1022,
+    "seconds": 26.56957416597288,
+    "vocabulary_size": 12089,
+    "parameters": 4939857,
+    "validation": {
+      "accuracy": 0.815068493150685,
+      "precision": 0.8059299191374663,
+      "recall": 0.71875,
+      "f1": 0.7598475222363406
+    }
+  },
+  {
+    "name": "deploy_seed7",
+    "config": {
+      "hidden": 128,
+      "dropout": 0.5,
+      "idf_pool": false,
+      "lr": 0.001,
+      "embedding_lr": 0.0002,
+      "weight_decay": 0.01,
+      "epochs": 40,
+      "patience": 6,
+      "batch_size": 64,
+      "sources": [
+        "wiki300",
+        "twitter100"
+      ],
+      "name": "candidate_04"
+    },
+    "seed": 7,
+    "best_epoch": 20,
+    "epochs_run": 26,
+    "train_rows": 4770,
+    "stopping_rows": 1022,
+    "seconds": 20.159917958953883,
+    "vocabulary_size": 12089,
+    "parameters": 4939857,
+    "validation": {
+      "accuracy": 0.8140900195694716,
+      "precision": 0.7942708333333334,
+      "recall": 0.7331730769230769,
+      "f1": 0.7625
+    }
+  },
+  {
+    "name": "deploy_seed99",
+    "config": {
+      "hidden": 128,
+      "dropout": 0.5,
+      "idf_pool": false,
+      "lr": 0.001,
+      "embedding_lr": 0.0002,
+      "weight_decay": 0.01,
+      "epochs": 40,
+      "patience": 6,
+      "batch_size": 64,
+      "sources": [
+        "wiki300",
+        "twitter100"
+      ],
+      "name": "candidate_04"
+    },
+    "seed": 99,
+    "best_epoch": 23,
+    "epochs_run": 29,
+    "train_rows": 4770,
+    "stopping_rows": 1022,
+    "seconds": 22.043273083982058,
+    "vocabulary_size": 12089,
+    "parameters": 4939857,
+    "validation": {
+      "accuracy": 0.8170254403131115,
+      "precision": 0.8377581120943953,
+      "recall": 0.6826923076923077,
+      "f1": 0.752317880794702
+    }
+  }
+]

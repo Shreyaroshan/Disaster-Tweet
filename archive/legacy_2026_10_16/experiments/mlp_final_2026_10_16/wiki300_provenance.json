@@ -1,0 +1,13 @@
+{
+  "source": "https://github.com/RaRe-Technologies/gensim-data/releases/download/glove-wiki-gigaword-300/glove-wiki-gigaword-300.gz",
+  "original": "https://nlp.stanford.edu/projects/glove/",
+  "license": "https://opendatacommons.org/licenses/pddl/1-0/",
+  "md5": "29e9329ac2241937d55b852e8284e89b",
+  "sha256": "0a7aebbe49097dc6e5ffff7a25e9aa20181a6e862050ca68bd2f36e056739e00",
+  "dimension": 300,
+  "words_matched": 10227,
+  "aliases": {},
+  "vocabulary_sha256": "70bfe6cbb7091d65755eba828375e80e8d5d8e3c26a5733429e3656d64e75cee",
+  "matrix_sha256": "0e2deed37aa31447cbad661b8c6f0b36e3f4cce0307b7c50980d34686f995359",
+  "matched_sha256": "fe6cf5b58eeac0a90392d8a305c6b6b6685a9f3f9931dbc99a99c859856da1f0"
+}

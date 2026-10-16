@@ -1,0 +1,11 @@
+test_all_architectures_ignore_right_padding_and_handle_short_text (test_shared_pipeline.SharedPipelineTests.test_all_architectures_ignore_right_padding_and_handle_short_text) ... ok
+test_cleaning_preserves_negation_and_hashtag_words (test_shared_pipeline.SharedPipelineTests.test_cleaning_preserves_negation_and_hashtag_words) ... ok
+test_final_saved_predictions_and_reported_metrics (test_shared_pipeline.SharedPipelineTests.test_final_saved_predictions_and_reported_metrics) ... skipped 'Final evaluation not run yet'
+test_frozen_embeddings_have_no_gradient (test_shared_pipeline.SharedPipelineTests.test_frozen_embeddings_have_no_gradient) ... ok
+test_no_data_leakage_and_training_only_vocabulary (test_shared_pipeline.SharedPipelineTests.test_no_data_leakage_and_training_only_vocabulary) ... ok
+test_transformer_uses_distinct_layer_initializations (test_shared_pipeline.SharedPipelineTests.test_transformer_uses_distinct_layer_initializations) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.815s
+
+OK (skipped=1)

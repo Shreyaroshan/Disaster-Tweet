@@ -1,0 +1,16 @@
+{
+  "batch_size": 64,
+  "learning_rate": 0.001,
+  "embedding_learning_rate": 0.0002,
+  "weight_decay": 0.01,
+  "epochs": 30,
+  "patience": 6,
+  "frozen": false,
+  "dropout": 0.5,
+  "filters": 64,
+  "kernels": [
+    2,
+    3,
+    4
+  ]
+}

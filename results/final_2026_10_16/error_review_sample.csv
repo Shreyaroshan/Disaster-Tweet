@@ -1,0 +1,32 @@
+model,id,text,target,probability,prediction,review_category,review_notes,confidence,review_status
+mlp,467,Armageddon https://t.co/uCSUDk3q1d,1,0.00015502657,0,,,0.99984497343,requires team interpretation
+mlp,8489,I JUST SCREAMED @toddyrockstar http://t.co/JDtPirnm76,1,0.002207916,0,,,0.997792084,requires team interpretation
+mlp,8528,"#NoChillLukeHammings
+IM SCREAMING",1,0.015628941,0,,,0.984371059,requires team interpretation
+mlp,6900,@CarlaChamorros HILLARY A MASS MURDERER.,0,0.98288417,1,,,0.98288417,requires team interpretation
+mlp,7250,"Nuclear deal disaster.
+
+#IranDeal #NoNuclearIran #BadIranDeal @JebBush @BarackObama http://t.co/z7phPjtqud",0,0.96261173,1,,,0.96261173,requires team interpretation
+mlp,6211,Governor allows parole for California school bus hijacker | Fresno Linked Local Network http://t.co/Sww0QsMxVM http://t.co/bcdP4gKokA,0,0.958742,1,,,0.958742,requires team interpretation
+cnn,8450,"OMFG??
+Didnt expect Drag Me Down to be the first song Pandora played 
+
+OMFG I SCREAMED SO LOUD
+My coworker is scared http://t.co/VzcvAdkcQp",1,0.05520141,0,,,0.94479859,requires team interpretation
+cnn,1458,'I did another one I did another one. You still ain't done shit about the other one.' Nigga body bagging Meek.,1,0.057980668,0,,,0.942019332,requires team interpretation
+cnn,1910,@Michael5SOS haha so would you say its so hot your balls are burning off????,1,0.06550914,0,,,0.93449086,requires team interpretation
+cnn,6211,Governor allows parole for California school bus hijacker | Fresno Linked Local Network http://t.co/Sww0QsMxVM http://t.co/bcdP4gKokA,0,0.9524121,1,,,0.9524121,requires team interpretation
+cnn,5621,@adorableappple No reported flooding po in the area. Ten-4. #mmda,0,0.9503695,1,,,0.9503695,requires team interpretation
+cnn,102,#stlouis #caraccidentlawyer Speeding Among Top Causes of Teen Accidents https://t.co/k4zoMOF319 https://t.co/S2kXVM0cBA Car Accident teeÛ_,0,0.92255133,1,,,0.92255133,requires team interpretation
+lstm,8489,I JUST SCREAMED @toddyrockstar http://t.co/JDtPirnm76,1,0.02749849,0,,,0.97250151,requires team interpretation
+lstm,7306,US Navy Sidelines 3 Newest Subs - http://t.co/guvTIzyCHE: DefenseNews.comUS Navy Sidelines 3 Newest SubsD... http://t.co/SY2WhXT0K5 #navy,1,0.04245769,0,,,0.95754231,requires team interpretation
+lstm,1474,Aubrey really out here body-bagging Meek.,1,0.045526564,0,,,0.954473436,requires team interpretation
+lstm,6211,Governor allows parole for California school bus hijacker | Fresno Linked Local Network http://t.co/Sww0QsMxVM http://t.co/bcdP4gKokA,0,0.98389673,1,,,0.98389673,requires team interpretation
+lstm,5621,@adorableappple No reported flooding po in the area. Ten-4. #mmda,0,0.9754303,1,,,0.9754303,requires team interpretation
+lstm,8637,ENGLAND EAST COAST. Dogger Bank Westward. 1. Seismic survey in progress by M/V Western Regent towing a 8400 metre long cable within areaÛ_,0,0.9665518,1,,,0.9665518,requires team interpretation
+transformer,2657,'@jorrynja: 6. @ your bf/gf/crush ??' @Ter_ell ??,1,0.031139564,0,,,0.968860436,requires team interpretation
+transformer,1910,@Michael5SOS haha so would you say its so hot your balls are burning off????,1,0.033408646,0,,,0.966591354,requires team interpretation
+transformer,3607,Just came back from camping and returned with a new song which gets recorded tomorrow. Can't wait! #Desolation #TheConspiracyTheory #NewEP,1,0.03504542,0,,,0.96495458,requires team interpretation
+transformer,10090,Satellite Spies Super Typhoon Soudelor from Space (Photo) http://t.co/VBhu2t8wgB,0,0.9953621,1,,,0.9953621,requires team interpretation
+transformer,8637,ENGLAND EAST COAST. Dogger Bank Westward. 1. Seismic survey in progress by M/V Western Regent towing a 8400 metre long cable within areaÛ_,0,0.9920398,1,,,0.9920398,requires team interpretation
+transformer,7234,@BookTubeAThon A world in which people aren't dying from natural and supernatural disaster and war most likely.,0,0.9857653,1,,,0.9857653,requires team interpretation

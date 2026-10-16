@@ -1,0 +1,78 @@
+{
+  "configurations": [
+    {
+      "hidden": 64,
+      "dropout": 0.5,
+      "lr": 0.001,
+      "embedding_lr": 0.0002,
+      "weight_decay": 0.01,
+      "epochs": 30,
+      "patience": 6,
+      "batch_size": 64,
+      "sources": [
+        "wiki100"
+      ],
+      "frozen": false,
+      "characters": false,
+      "name": "fusion_01"
+    },
+    {
+      "hidden": 64,
+      "dropout": 0.5,
+      "lr": 0.001,
+      "embedding_lr": 0.0002,
+      "weight_decay": 0.01,
+      "epochs": 30,
+      "patience": 6,
+      "batch_size": 64,
+      "sources": [
+        "wiki300"
+      ],
+      "frozen": false,
+      "characters": false,
+      "name": "fusion_02"
+    },
+    {
+      "hidden": 64,
+      "dropout": 0.5,
+      "lr": 0.001,
+      "embedding_lr": 0.0002,
+      "weight_decay": 0.01,
+      "epochs": 30,
+      "patience": 6,
+      "batch_size": 64,
+      "sources": [
+        "wiki300"
+      ],
+      "frozen": true,
+      "characters": false,
+      "name": "fusion_03"
+    },
+    {
+      "hidden": 64,
+      "dropout": 0.5,
+      "lr": 0.001,
+      "embedding_lr": 0.0002,
+      "weight_decay": 0.01,
+      "epochs": 30,
+      "patience": 6,
+      "batch_size": 64,
+      "sources": [
+        "wiki300"
+      ],
+      "frozen": true,
+      "characters": true,
+      "name": "fusion_04"
+    }
+  ],
+  "seeds": [
+    42,
+    123
+  ],
+  "context": "Adaptive follow-up after dual-embedding test accuracy decreased. All outcomes are exploratory; unsuccessful prior experiment is retained.",
+  "folds": "Same three outer and inner folds as mlp_final_2026_10_16. Vocabularies/IDF/TF-IDF fit on inner training only.",
+  "selection": "Four configurations times two seeds times three folds. Choose mean CV accuracy then F1 at fixed 0.5.",
+  "confirmation": "Winning config fitted at seeds42,123,2026; validation selects designated seed42 or equal-weight three-seed ensemble, threshold .35..65 in .01 steps by accuracy then F1, proximity .5, then single.",
+  "test_policy": "Selection fixed before one separate test evaluation. Do not select seed/configuration from test outcomes.",
+  "reference": "Reference architecture CV metrics from preceding experiment; same rows, inner stopping splits and seeds. Optimizer common; fusion maximum30 epochs versus reference40."
+}

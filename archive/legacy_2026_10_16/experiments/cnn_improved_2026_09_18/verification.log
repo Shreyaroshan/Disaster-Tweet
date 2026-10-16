@@ -1,0 +1,19 @@
+test_embedding_freeze_and_gradient (test_improved_cnn.ImprovedCNNTests.test_embedding_freeze_and_gradient) ... ok
+test_saved_test_predictions_and_metrics (test_improved_cnn.ImprovedCNNTests.test_saved_test_predictions_and_metrics) ... ok
+test_saved_validation_probabilities_and_preservation (test_improved_cnn.ImprovedCNNTests.test_saved_validation_probabilities_and_preservation) ... ok
+test_short_empty_and_padding_invariance (test_improved_cnn.ImprovedCNNTests.test_short_empty_and_padding_invariance) ... ok
+test_frozen_embeddings_stay_fixed_and_finetuning_has_gradient (test_improved_mlp.ImprovedMLPTests.test_frozen_embeddings_stay_fixed_and_finetuning_has_gradient) ... ok
+test_pooling_ignores_padding_and_handles_empty_text (test_improved_mlp.ImprovedMLPTests.test_pooling_ignores_padding_and_handles_empty_text) ... ok
+test_saved_selection_reproduces_validation_and_preserves_inputs (test_improved_mlp.ImprovedMLPTests.test_saved_selection_reproduces_validation_and_preserves_inputs) ... ok
+test_saved_test_metrics_and_inference_batch_invariance (test_improved_mlp.ImprovedMLPTests.test_saved_test_metrics_and_inference_batch_invariance) ... ok
+test_tfidf_transform_does_not_learn_validation_words (test_improved_mlp.ImprovedMLPTests.test_tfidf_transform_does_not_learn_validation_words) ... ok
+test_checkpoint_reproduces_saved_predictions (test_project.PipelineTests.test_checkpoint_reproduces_saved_predictions) ... ok
+test_clean_preserves_negation_and_hashtag_word (test_project.PipelineTests.test_clean_preserves_negation_and_hashtag_word) ... ok
+test_no_split_leakage_and_train_only_vocabulary (test_project.PipelineTests.test_no_split_leakage_and_train_only_vocabulary) ... ok
+test_report_metrics_match_predictions (test_project.PipelineTests.test_report_metrics_match_predictions) ... ok
+test_unknown_empty_and_padding (test_project.PipelineTests.test_unknown_empty_and_padding) ... ok
+
+----------------------------------------------------------------------
+Ran 14 tests in 1.510s
+
+OK

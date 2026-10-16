@@ -1,0 +1,45 @@
+{
+  "winner": "fusion_04",
+  "ranking": [
+    {
+      "name": "fusion_04",
+      "accuracy": 0.7942348008385745,
+      "f1": 0.7330914056622216,
+      "accuracy_std": 0.004064599728528409
+    },
+    {
+      "name": "fusion_03",
+      "accuracy": 0.7929769392033542,
+      "f1": 0.7247112352103975,
+      "accuracy_std": 0.005531970029207063
+    },
+    {
+      "name": "fusion_02",
+      "accuracy": 0.7922431865828092,
+      "f1": 0.7251249948035413,
+      "accuracy_std": 0.0038701822253129807
+    },
+    {
+      "name": "fusion_01",
+      "accuracy": 0.789308176100629,
+      "f1": 0.719332541878757,
+      "accuracy_std": 0.01201899792260755
+    }
+  ],
+  "config": {
+    "hidden": 64,
+    "dropout": 0.5,
+    "lr": 0.001,
+    "embedding_lr": 0.0002,
+    "weight_decay": 0.01,
+    "epochs": 30,
+    "patience": 6,
+    "batch_size": 64,
+    "sources": [
+      "wiki300"
+    ],
+    "frozen": true,
+    "characters": true,
+    "name": "fusion_04"
+  }
+}

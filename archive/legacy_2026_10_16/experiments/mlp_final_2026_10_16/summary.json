@@ -1,0 +1,37 @@
+{
+  "comparison": [
+    {
+      "model": "September improved MLP",
+      "accuracy": 0.8172043010752689,
+      "precision": 0.8021108179419525,
+      "recall": 0.7307692307692307,
+      "f1": 0.7647798742138365
+    },
+    {
+      "model": "Final CV-selected MLP",
+      "accuracy": 0.8054740957966764,
+      "precision": 0.7601918465227818,
+      "recall": 0.7620192307692307,
+      "f1": 0.7611044417767107
+    }
+  ],
+  "improvement": {
+    "accuracy": -0.011730205278592476,
+    "precision": -0.04191897141917067,
+    "recall": 0.03125,
+    "f1": -0.0036754324371258695
+  },
+  "paired_bootstrap_95_percent_delta_intervals": {
+    "accuracy": [
+      -0.030303030303030387,
+      0.0068670576735092555
+    ],
+    "f1": [
+      -0.02690769063011455,
+      0.019517452090493128
+    ]
+  },
+  "validation_gate_passed": true,
+  "caveat": "Existing reused local test. CV was used for model selection. Conditional tweet bootstrap omits seed/search uncertainty and event correlation.",
+  "previous_models_and_data_preserved": true
+}

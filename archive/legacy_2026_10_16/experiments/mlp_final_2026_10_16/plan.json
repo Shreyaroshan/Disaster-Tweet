@@ -1,0 +1,133 @@
+{
+  "configurations": [
+    {
+      "hidden": 128,
+      "dropout": 0.5,
+      "idf_pool": false,
+      "lr": 0.001,
+      "embedding_lr": 0.0002,
+      "weight_decay": 0.01,
+      "epochs": 40,
+      "patience": 6,
+      "batch_size": 64,
+      "sources": [
+        "wiki100"
+      ],
+      "name": "candidate_01"
+    },
+    {
+      "hidden": 128,
+      "dropout": 0.5,
+      "idf_pool": false,
+      "lr": 0.001,
+      "embedding_lr": 0.0002,
+      "weight_decay": 0.01,
+      "epochs": 40,
+      "patience": 6,
+      "batch_size": 64,
+      "sources": [
+        "wiki300"
+      ],
+      "name": "candidate_02"
+    },
+    {
+      "hidden": 128,
+      "dropout": 0.5,
+      "idf_pool": false,
+      "lr": 0.001,
+      "embedding_lr": 0.0002,
+      "weight_decay": 0.01,
+      "epochs": 40,
+      "patience": 6,
+      "batch_size": 64,
+      "sources": [
+        "twitter100"
+      ],
+      "name": "candidate_03"
+    },
+    {
+      "hidden": 128,
+      "dropout": 0.5,
+      "idf_pool": false,
+      "lr": 0.001,
+      "embedding_lr": 0.0002,
+      "weight_decay": 0.01,
+      "epochs": 40,
+      "patience": 6,
+      "batch_size": 64,
+      "sources": [
+        "wiki300",
+        "twitter100"
+      ],
+      "name": "candidate_04"
+    },
+    {
+      "hidden": 128,
+      "dropout": 0.5,
+      "idf_pool": true,
+      "lr": 0.001,
+      "embedding_lr": 0.0002,
+      "weight_decay": 0.01,
+      "epochs": 40,
+      "patience": 6,
+      "batch_size": 64,
+      "sources": [
+        "wiki300"
+      ],
+      "name": "candidate_05"
+    },
+    {
+      "hidden": 128,
+      "dropout": 0.5,
+      "idf_pool": true,
+      "lr": 0.001,
+      "embedding_lr": 0.0002,
+      "weight_decay": 0.01,
+      "epochs": 40,
+      "patience": 6,
+      "batch_size": 64,
+      "sources": [
+        "twitter100"
+      ],
+      "name": "candidate_06"
+    },
+    {
+      "hidden": 128,
+      "dropout": 0.5,
+      "idf_pool": true,
+      "lr": 0.001,
+      "embedding_lr": 0.0002,
+      "weight_decay": 0.01,
+      "epochs": 40,
+      "patience": 6,
+      "batch_size": 64,
+      "sources": [
+        "wiki300",
+        "twitter100"
+      ],
+      "name": "candidate_07"
+    },
+    {
+      "hidden": 64,
+      "dropout": 0.3,
+      "idf_pool": false,
+      "lr": 0.001,
+      "embedding_lr": 0.0002,
+      "weight_decay": 0.01,
+      "epochs": 40,
+      "patience": 6,
+      "batch_size": 64,
+      "sources": [
+        "wiki300"
+      ],
+      "name": "candidate_08"
+    }
+  ],
+  "objective": "Accuracy primary; disaster-class F1 tie-breaker. All CV evaluation at threshold 0.5.",
+  "cv": "Three stratified outer folds on original train only, random_state=20261016. Within each fitting fold, stratified 15% inner stopping split. Vocabulary, UNK and IDF fit on inner training only.",
+  "screening": "Eight candidates, seed42, three folds. Top two candidates plus candidate_01 reference get seed123 repeat on the same folds. Final rank by mean accuracy over both seeds; then F1.",
+  "confirmation": "Winning configuration trained on original train at seeds 42,123,2026,7,99 with original validation for stopping. Compare seed42 versus five-seed equal-weight ensemble; threshold .35..65 step .01, validation accuracy then F1, proximity .5, single preferred.",
+  "validation_gate": "Recommend replacement only if final validation accuracy and F1 both match or exceed the saved current MLP. Record gate before test.",
+  "evaluation": "One final evaluation on existing reused test. Selection cannot change after evaluation. CV is used for selection, not claimed to be a fully independent nested-CV performance estimate.",
+  "scope": "MLP classifiers over static pretrained word embeddings; no Transformer, CNN or LSTM."
+}

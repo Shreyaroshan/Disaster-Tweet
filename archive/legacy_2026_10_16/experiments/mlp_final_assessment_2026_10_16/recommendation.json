@@ -1,0 +1,15 @@
+{
+  "status": "retain_existing_model",
+  "reason": "All three October candidates had lower observed test accuracy and F1 than the September MLP. No further improvement established.",
+  "selected_model": "experiments/mlp_improved_2026_09_18/selection.json",
+  "predict_command": "./.venv/bin/python src/improve_mlp.py predict --text \"Flooding has forced residents to evacuate\"",
+  "measured_results": {
+    "model": "Current September MLP",
+    "accuracy": 0.8172043010752689,
+    "precision": 0.8021108179419525,
+    "recall": 0.7307692307692307,
+    "f1": 0.7647798742138365
+  },
+  "october_training_runs": 65,
+  "caution": "Selection and repeated test comparisons are exploratory. Do not claim a fresh independent test or statistical superiority."
+}

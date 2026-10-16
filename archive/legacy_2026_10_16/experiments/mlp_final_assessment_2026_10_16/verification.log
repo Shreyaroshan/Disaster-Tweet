@@ -1,0 +1,29 @@
+test_saved_test_predictions_reproduce (test_ensemble_mlp.MLPBlendTests.test_saved_test_predictions_reproduce) ... ok
+test_selection_is_a_valid_probability_mixture (test_ensemble_mlp.MLPBlendTests.test_selection_is_a_valid_probability_mixture) ... ok
+test_cv_folds_are_disjoint_and_exclude_original_validation_test (test_final_mlp.FinalMLPTests.test_cv_folds_are_disjoint_and_exclude_original_validation_test) ... ok
+test_padding_and_empty_input_are_safe (test_final_mlp.FinalMLPTests.test_padding_and_empty_input_are_safe) ... ok
+test_saved_model_reproduces_validation_and_test (test_final_mlp.FinalMLPTests.test_saved_model_reproduces_validation_and_test) ... ok
+test_vocabulary_and_idf_are_fit_only_on_supplied_text (test_final_mlp.FinalMLPTests.test_vocabulary_and_idf_are_fit_only_on_supplied_text) ... ok
+test_checkpoint_predictions_and_preservation (test_fusion_mlp.FusionMLPTests.test_checkpoint_predictions_and_preservation) ... ok
+test_lexical_vocabulary_does_not_learn_transform_data (test_fusion_mlp.FusionMLPTests.test_lexical_vocabulary_does_not_learn_transform_data) ... ok
+test_padding_and_empty_inputs (test_fusion_mlp.FusionMLPTests.test_padding_and_empty_inputs) ... ok
+test_saved_fold_features_fit_on_inner_training_only (test_fusion_mlp.FusionMLPTests.test_saved_fold_features_fit_on_inner_training_only) ... ok
+test_embedding_freeze_and_gradient (test_improved_cnn.ImprovedCNNTests.test_embedding_freeze_and_gradient) ... ok
+test_saved_test_predictions_and_metrics (test_improved_cnn.ImprovedCNNTests.test_saved_test_predictions_and_metrics) ... ok
+test_saved_validation_probabilities_and_preservation (test_improved_cnn.ImprovedCNNTests.test_saved_validation_probabilities_and_preservation) ... ok
+test_short_empty_and_padding_invariance (test_improved_cnn.ImprovedCNNTests.test_short_empty_and_padding_invariance) ... ok
+test_frozen_embeddings_stay_fixed_and_finetuning_has_gradient (test_improved_mlp.ImprovedMLPTests.test_frozen_embeddings_stay_fixed_and_finetuning_has_gradient) ... ok
+test_pooling_ignores_padding_and_handles_empty_text (test_improved_mlp.ImprovedMLPTests.test_pooling_ignores_padding_and_handles_empty_text) ... ok
+test_saved_selection_reproduces_validation_and_preserves_inputs (test_improved_mlp.ImprovedMLPTests.test_saved_selection_reproduces_validation_and_preserves_inputs) ... ok
+test_saved_test_metrics_and_inference_batch_invariance (test_improved_mlp.ImprovedMLPTests.test_saved_test_metrics_and_inference_batch_invariance) ... ok
+test_tfidf_transform_does_not_learn_validation_words (test_improved_mlp.ImprovedMLPTests.test_tfidf_transform_does_not_learn_validation_words) ... ok
+test_checkpoint_reproduces_saved_predictions (test_project.PipelineTests.test_checkpoint_reproduces_saved_predictions) ... ok
+test_clean_preserves_negation_and_hashtag_word (test_project.PipelineTests.test_clean_preserves_negation_and_hashtag_word) ... ok
+test_no_split_leakage_and_train_only_vocabulary (test_project.PipelineTests.test_no_split_leakage_and_train_only_vocabulary) ... ok
+test_report_metrics_match_predictions (test_project.PipelineTests.test_report_metrics_match_predictions) ... ok
+test_unknown_empty_and_padding (test_project.PipelineTests.test_unknown_empty_and_padding) ... ok
+
+----------------------------------------------------------------------
+Ran 24 tests in 5.423s
+
+OK

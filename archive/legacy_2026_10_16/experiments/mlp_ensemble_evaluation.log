@@ -1,0 +1,3 @@
+                        model  accuracy  precision   recall      f1
+                September MLP  0.817204   0.802111 0.730769 0.76478
+Validation-selected MLP blend  0.807429   0.782946 0.728365 0.75467

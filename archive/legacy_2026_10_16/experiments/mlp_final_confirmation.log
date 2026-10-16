@@ -1,0 +1,48 @@
+deploy_seed42: {'accuracy': 0.8180039138943248, 'precision': 0.7804878048780488, 'recall': 0.7692307692307693, 'f1': 0.774818401937046}
+deploy_seed123: {'accuracy': 0.815068493150685, 'precision': 0.8075880758807588, 'recall': 0.7163461538461539, 'f1': 0.759235668789809}
+deploy_seed2026: {'accuracy': 0.815068493150685, 'precision': 0.8059299191374663, 'recall': 0.71875, 'f1': 0.7598475222363406}
+deploy_seed7: {'accuracy': 0.8140900195694716, 'precision': 0.7942708333333334, 'recall': 0.7331730769230769, 'f1': 0.7625}
+deploy_seed99: {'accuracy': 0.8170254403131115, 'precision': 0.8377581120943953, 'recall': 0.6826923076923077, 'f1': 0.752317880794702}
+FINAL SELECTION LOCKED
+{
+  "config": {
+    "hidden": 128,
+    "dropout": 0.5,
+    "idf_pool": false,
+    "lr": 0.001,
+    "embedding_lr": 0.0002,
+    "weight_decay": 0.01,
+    "epochs": 40,
+    "patience": 6,
+    "batch_size": 64,
+    "sources": [
+      "wiki300",
+      "twitter100"
+    ],
+    "name": "candidate_04"
+  },
+  "seeds": [
+    42
+  ],
+  "ensemble": false,
+  "threshold": 0.5,
+  "validation": {
+    "ensemble": false,
+    "threshold": 0.5,
+    "accuracy": 0.8180039138943248,
+    "precision": 0.7804878048780488,
+    "recall": 0.7692307692307693,
+    "f1": 0.774818401937046
+  },
+  "previous_validation": {
+    "threshold": 0.49,
+    "accuracy": 0.8180039138943248,
+    "precision": 0.8074866310160428,
+    "recall": 0.7259615384615384,
+    "f1": 0.7645569620253164
+  },
+  "validation_gate_passed": true,
+  "checkpoint_sha256": {
+    "deploy_seed42.pt": "9e9f3bf14b0c3717c74482d6325bbb4784fe840f2a9065cd57354904bb242cb9"
+  }
+}

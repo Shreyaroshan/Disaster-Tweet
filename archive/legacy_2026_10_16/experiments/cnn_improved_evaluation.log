@@ -1,0 +1,5 @@
+                   model  threshold  accuracy  precision   recall       f1
+            Original CNN       0.50  0.759531   0.751479 0.610577 0.673740
+            Improved CNN       0.50  0.799609   0.754217 0.752404 0.753309
+     Improved CNN at 0.5       0.50  0.799609   0.754217 0.752404 0.753309
+Improved MLP (reference)       0.49  0.817204   0.802111 0.730769 0.764780

@@ -1,0 +1,16 @@
+{
+  "python": "3.13.1",
+  "platform": "Darwin",
+  "machine": "arm64",
+  "torch": "2.14.0",
+  "numpy": "2.5.3",
+  "sklearn": "1.9.1",
+  "device": "cpu",
+  "threads": 4,
+  "source_sha256": {
+    "src/final_mlp.py": "d41f12e144a60d3b5d1c3b2b2ba7d88068c7a3907a2f408fc7f7cbbc9e86eddc",
+    "src/project.py": "0e24f79be90875ee60115308bca4e10a0be31501ffbd0f524fd10067c2f202db",
+    "src/improve_mlp.py": "be2a77cf4a4320efcaa485670181c7e79a375986d127ed454d4397139d1d752b",
+    "requirements.txt": "0a6f3cd1f50c359a9dc5d66460747ffd178354b03ffb4056c04232ff512373cf"
+  }
+}

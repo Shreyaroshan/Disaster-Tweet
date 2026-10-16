@@ -1,0 +1,16 @@
+{
+  "python": "3.13.1",
+  "machine": "arm64",
+  "torch": "2.14.0",
+  "numpy": "2.5.3",
+  "scikit_learn": "1.9.1",
+  "device": "cpu",
+  "torch_threads": 4,
+  "deterministic_algorithms": true,
+  "source_sha256": {
+    "src/improve_cnn.py": "f259b5e78c12167b0a7d33c48d0fcb928bbbf6fc07719711396687480a1ef1c2",
+    "src/project.py": "0e24f79be90875ee60115308bca4e10a0be31501ffbd0f524fd10067c2f202db",
+    "src/improve_mlp.py": "be2a77cf4a4320efcaa485670181c7e79a375986d127ed454d4397139d1d752b",
+    "requirements.txt": "0a6f3cd1f50c359a9dc5d66460747ffd178354b03ffb4056c04232ff512373cf"
+  }
+}

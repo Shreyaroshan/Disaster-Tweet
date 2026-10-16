@@ -1,0 +1,42 @@
+{
+  "winner": "candidate_04",
+  "ranking": [
+    {
+      "name": "candidate_04",
+      "accuracy": 0.7886792452830189,
+      "accuracy_std": 0.017952642632135155,
+      "f1": 0.736144171766891,
+      "runs": 6
+    },
+    {
+      "name": "candidate_08",
+      "accuracy": 0.7833333333333333,
+      "accuracy_std": 0.01294284001714256,
+      "f1": 0.7233316758669021,
+      "runs": 6
+    },
+    {
+      "name": "candidate_01",
+      "accuracy": 0.7821802935010482,
+      "accuracy_std": 0.013434213520055542,
+      "f1": 0.718410907403507,
+      "runs": 6
+    }
+  ],
+  "config": {
+    "hidden": 128,
+    "dropout": 0.5,
+    "idf_pool": false,
+    "lr": 0.001,
+    "embedding_lr": 0.0002,
+    "weight_decay": 0.01,
+    "epochs": 40,
+    "patience": 6,
+    "batch_size": 64,
+    "sources": [
+      "wiki300",
+      "twitter100"
+    ],
+    "name": "candidate_04"
+  }
+}

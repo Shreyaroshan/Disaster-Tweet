@@ -1,0 +1,76 @@
+trial_01_seed42: accuracy=0.8141, F1=0.7619, epoch=9, seconds=24.4
+trial_02_seed42: accuracy=0.8131, F1=0.7503, epoch=6, seconds=21.9
+trial_03_seed42: accuracy=0.8200, F1=0.7799, epoch=4, seconds=19.3
+trial_04_seed42: accuracy=0.8160, F1=0.7632, epoch=15, seconds=45.8
+trial_05_seed42: accuracy=0.8112, F1=0.7516, epoch=6, seconds=17.8
+trial_06_seed42: accuracy=0.8112, F1=0.7510, epoch=9, seconds=22.2
+trial_07_seed42: accuracy=0.8151, F1=0.7731, epoch=4, seconds=25.0
+trial_08_seed42: accuracy=0.8112, F1=0.7597, epoch=6, seconds=30.9
+trial_09_seed42: accuracy=0.8190, F1=0.7702, epoch=3, seconds=19.5
+trial_10_seed42: accuracy=0.8151, F1=0.7623, epoch=4, seconds=21.7
+trial_11_seed42: accuracy=0.8190, F1=0.7713, epoch=9, seconds=31.6
+trial_12_seed42: accuracy=0.8170, F1=0.7606, epoch=5, seconds=22.3
+trial_03_seed123: accuracy=0.8200, F1=0.7711, epoch=7, seconds=26.2
+trial_03_seed2026: accuracy=0.8151, F1=0.7747, epoch=4, seconds=20.3
+trial_11_seed123: accuracy=0.8170, F1=0.7648, epoch=11, seconds=33.9
+trial_11_seed2026: accuracy=0.8180, F1=0.7675, epoch=11, seconds=33.0
+trial_09_seed123: accuracy=0.8141, F1=0.7677, epoch=4, seconds=20.7
+trial_09_seed2026: accuracy=0.8170, F1=0.7733, epoch=5, seconds=22.8
+SELECTION FIXED; no test labels read.
+{
+  "winner": "trial_03",
+  "config": {
+    "frozen": false,
+    "filters": 64,
+    "kernels": [
+      2,
+      3,
+      4
+    ],
+    "pool": "max",
+    "dropout": 0.5,
+    "lr": 0.001,
+    "embedding_lr": 0.0002,
+    "weight_decay": 0.01,
+    "epochs": 30,
+    "patience": 6,
+    "batch_size": 64,
+    "trial": "trial_03"
+  },
+  "rankings": [
+    {
+      "trial": "trial_03",
+      "mean_accuracy": 0.8183300717547293,
+      "std_accuracy": 0.002824609927542184,
+      "mean_f1": 0.7752601361421947
+    },
+    {
+      "trial": "trial_11",
+      "mean_accuracy": 0.8180039138943248,
+      "std_accuracy": 0.000978473581213335,
+      "mean_f1": 0.767867498244332
+    },
+    {
+      "trial": "trial_09",
+      "mean_accuracy": 0.8166992824527072,
+      "std_accuracy": 0.0024624378458156793,
+      "mean_f1": 0.7704152767020843
+    }
+  ],
+  "seeds": [
+    42
+  ],
+  "ensemble": false,
+  "threshold": 0.5,
+  "validation": {
+    "ensemble": false,
+    "threshold": 0.5,
+    "accuracy": 0.8199608610567515,
+    "precision": 0.7761904761904762,
+    "recall": 0.7836538461538461,
+    "f1": 0.7799043062200957
+  },
+  "checkpoint_sha256": {
+    "trial_03_seed42.pt": "d6268f3476c6f7753afcea6f8360b1b40ae505a00ab6ea5f700c3d301eb009ed"
+  }
+}
