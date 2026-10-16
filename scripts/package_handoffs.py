@@ -36,7 +36,7 @@ Assigned reviewer: Member {number}. Confirm the member's name in the contributio
 
 ## Shared behavior
 
-Use disaster_tweets.preprocessing for cleaning/token IDs. Use the shared trainer/evaluator; do not duplicate cleaning or create a different split. BCEWithLogitsLoss consumes logits; sigmoid converts logits to probabilities only for evaluation/inference. Training-only vocabulary and padding masks prevent leakage and spurious padding features. Model class, selected config and this methodology card are the member's upload scope.
+Use disaster_tweets.preprocessing for cleaning/token IDs. Use the shared trainer/evaluator; do not duplicate cleaning or create a different split. BCEWithLogitsLoss consumes logits; sigmoid converts logits to probabilities only for evaluation/inference. Training-only vocabulary and padding masks prevent leakage and spurious padding features. Model class, selected config, methodology card, saved results and artifact manifest are the member's upload scope. The supplied results were generated centrally with AI assistance; document your actual review or reproduction rather than claiming authorship of those earlier runs.
 
 ## Run
 
@@ -75,6 +75,12 @@ Do not present the initial generated runs or an upload alone as independently au
         for a,b in [('GloVe100d','GloVe 100d'),('mean+max200d','mean+max 200d'),('dropout0.','dropout 0.'),('Dense128','Dense(128)'),('widths2','widths 2'),('with64','with 64'),('LSTM64','LSTM 64'),('mean+max256d','mean+max 256d'),('Dense64','Dense(64)'),('projection64d','projection 64d'),('with4','with 4'),('feed-forward128d','feed-forward 128d')]:card=card.replace(a,b)
         path=ROOT/f'docs/models/{name}.md';path.write_text(card)
         files=[f'src/disaster_tweets/models/{name}.py',f'configs/{name}.json',f'docs/models/{name}.md']
+        for folder in [f'results/final_2026_10_16/{name}',f'results/replication_2026_10_16/{name}',f'results/retained/{name}']:
+            files.extend(str(path.relative_to(ROOT)) for path in sorted((ROOT/folder).rglob('*')) if path.is_file() and path.suffix not in {'.pt','.npy','.joblib'})
+        files.append(f'artifacts/models/{name}/manifest.json')
+        log_names={'cnn':'cnn_replication.log','mlp':'mlp_replication.log','lstm':'lstm_training.log','transformer':'transformer_training.log'}
+        log=f'results/{log_names[name]}'
+        if (ROOT/log).exists():files.append(log)
         instructions=f'''Member {number}: {name.upper()} handoff
 
 Pull the shared repository first. Create your own branch. Copy these files into the identical repository paths, review/run/understand them and document actual changes. Do not restore the old improve/tune scripts into active src.
@@ -83,10 +89,10 @@ Files:
 '''+''.join('- '+f+'\n' for f in files)+f'''\nAfter review, stage only these files:
 
 git add {' '.join(files)}
-git commit -m "Add reviewed {name.upper()} model and methodology"
+git commit -m "Add reviewed {name.upper()} model, methodology and results"
 git push origin YOUR_BRANCH
 
-Use your own Git account and normal review process. The administrator did not create a commit under your identity. Weights/data are excluded. All model files become runnable together after all assigned members upload their modules.
+Use your own Git account and normal review process. The administrator did not create a commit under your identity. Weights/data are excluded. Supplied results are previously generated AI-assisted runs; label any new reproduction separately. Uploading them alone does not establish authorship. All model files become runnable together after all assigned members upload their modules.
 '''
         zip_path=ROOT/f'handoff/member_{number}_{name}.zip'
         with zipfile.ZipFile(zip_path,'w',zipfile.ZIP_DEFLATED) as bundle:
@@ -94,6 +100,14 @@ Use your own Git account and normal review process. The administrator did not cr
             bundle.writestr(f'HANDOFF_member_{number}_{name}.txt',instructions)
         manifests.append({'member':number,'model':name,'zip':str(zip_path.relative_to(ROOT)),'files':files})
     (ROOT/'handoff/manifest.json').write_text(json.dumps(manifests,indent=2))
+    integration_files=[path for path in sorted((ROOT/'reports/final').rglob('*')) if path.is_file()]
+    integration_files.extend(path for path in sorted((ROOT/'results/final_2026_10_16').glob('*')) if path.is_file())
+    with zipfile.ZipFile(ROOT/'handoff/Integration_Report_Package.zip','w',zipfile.ZIP_DEFLATED) as bundle:
+        for path in integration_files:bundle.write(path,str(path.relative_to(ROOT)))
+        bundle.writestr('INTEGRATION_README.txt','Keep local until all four members have uploaded their models and results. Review the comparison and report, complete names/contributions/signatures and institutional requirements, then push the combined evaluation and final report. No test re-tuning is needed.\n')
+    with zipfile.ZipFile(ROOT/'handoff/Team_Model_Handoffs.zip','w',zipfile.ZIP_DEFLATED) as bundle:
+        for record in manifests:bundle.write(ROOT/record['zip'],Path(record['zip']).name)
+        bundle.write(ROOT/'docs/TEAM_HANDOFF.md','TEAM_HANDOFF.md')
     print(json.dumps(manifests,indent=2))
 
 

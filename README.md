@@ -2,18 +2,11 @@
 
 Four architecture families classify disaster-related tweets using one shared cleaning, vocabulary, split, embedding source, training loop and evaluation format. The active implementation is under `src/disaster_tweets`; historical prototypes and unsuccessful experiments are under `archive/legacy_2026_10_16`.
 
-## Measured final comparison
+## Results publication
 
-All scores use the same existing 1,023-tweet labeled local test split. They are exploratory because that test split was reused across project iterations.
+Each assigned member uploads their model-specific results alongside their model, selected configuration and methodology card. The already measured combined comparison and final report remain local until all four contributions are integrated. Historical results remain available in the archive and in earlier Git history.
 
-| Model | Accuracy | Precision | Recall | F1 |
-|---|---:|---:|---:|---:|
-| MLP | 81.72% | 80.21% | 73.08% | 76.48% |
-| CNN | 79.96% | 75.42% | 75.24% | 75.33% |
-| Bidirectional LSTM | 80.94% | 76.25% | 77.16% | 76.70% |
-| Encoder-only Transformer | 80.55% | 79.40% | 70.43% | 74.65% |
-
-MLP has the highest observed accuracy; LSTM has the highest observed F1/recall. Their small difference does not establish statistical superiority. Selected Transformer attention layers train on this dataset with frozen GloVe input vectors; this is not a pretrained BERT comparison. Full metrics, confusion counts, training costs and paired uncertainty are in `results/final_2026_10_16`.
+All four models have been run locally on the same 1,023-tweet test split. These measurements are exploratory because that split was reused across project iterations. The selected encoder-only Transformer uses frozen GloVe input vectors with attention trained on this dataset; it is not pretrained BERT.
 
 ## Repository layout
 
@@ -31,24 +24,24 @@ src/prepare_data.py            Data and embedding preparation
 src/train.py                   Train one architecture family
 src/evaluate.py                Locked four-model evaluation
 src/predict.py                 Predict from a selected local checkpoint
-results/                       Metrics, histories, predictions and selection evidence
-reports/final/                 Final DOCX, Markdown and figures
+results/                       Member-uploaded metrics, histories, predictions and selection evidence
+reports/final/                 Combined report and figures; uploaded after integration
 scripts/                       Figures, report generation and handoff packaging
-artifacts/models/              Local selected weights plus tracked manifests
+artifacts/models/              Local weights; manifests uploaded by each member
  docs/                         Guidelines checklist, AI disclosure and team workflow
  tests/                        Shared behavior and artifact verification
 ```
 
 ## Team upload plan
 
-The administrator pushes archive/shared infrastructure/results/report. Model implementation files, selected configs and model cards are intentionally left for the assigned members to review and push. Until then, training that model reports an awaiting-upload message; integration tests that require missing modules are skipped. All four implementations were run and verified locally before packaging.
+The administrator pushes the archive and shared infrastructure. Each assigned member reviews and pushes their model implementation, selected config, model card, model-specific results and artifact manifest. The combined evaluation and final report are uploaded after all four contributions are integrated. Until then, training that model reports an awaiting-upload message; integration tests that require missing modules are skipped. All four implementations were run and verified locally before packaging.
 
 | Assigned reviewer | Model | Upload scope |
 |---|---|---|
-| Member 1 user | CNN | `src/disaster_tweets/models/cnn.py`, `configs/cnn.json`, `docs/models/cnn.md` |
-| Member 2 | MLP | `src/disaster_tweets/models/mlp.py`, `configs/mlp.json`, `docs/models/mlp.md` |
-| Member 3 | Encoder-only Transformer | `src/disaster_tweets/models/transformer.py`, `configs/transformer.json`, `docs/models/transformer.md` |
-| Member 4 | LSTM | `src/disaster_tweets/models/lstm.py`, `configs/lstm.json`, `docs/models/lstm.md` |
+| Member 1 user | CNN | `src/disaster_tweets/models/cnn.py`, `configs/cnn.json`, `docs/models/cnn.md`, model-specific results and artifact manifest |
+| Member 2 | MLP | `src/disaster_tweets/models/mlp.py`, `configs/mlp.json`, `docs/models/mlp.md`, model-specific results and artifact manifest |
+| Member 3 | Encoder-only Transformer | `src/disaster_tweets/models/transformer.py`, `configs/transformer.json`, `docs/models/transformer.md`, model-specific results and artifact manifest |
+| Member 4 | LSTM | `src/disaster_tweets/models/lstm.py`, `configs/lstm.json`, `docs/models/lstm.md`, model-specific results and artifact manifest |
 
 See `docs/TEAM_HANDOFF.md`. The local `handoff` folder contains four ZIP packages. The old three MLP improve/select/report scripts are superseded by this modular structure. Name-to-member mapping needs team confirmation; generated implementation and actual member contributions must be distinguished. No member commits or signatures are fabricated.
 
@@ -93,7 +86,7 @@ The local selected final weights can be used with:
 ./.venv/bin/python src/predict.py --model cnn --text "Flooding has forced residents to evacuate"
 ```
 
-Weights are excluded from Git, so a fresh clone must train models locally. All final predictions and unsubmitted Kaggle submission CSVs are provided for audit; they are not Kaggle leaderboard scores.
+Weights are excluded from Git, so a fresh clone must train models locally. Member handoffs include final predictions and unsubmitted Kaggle submission CSVs for audit; they are not Kaggle leaderboard scores.
 
 ## Verification and report
 
@@ -101,9 +94,9 @@ Weights are excluded from Git, so a fresh clone must train models locally. All f
 ./.venv/bin/python -m unittest discover -s tests -p test_shared_pipeline.py -v
 ```
 
-Tests cover split/vocabulary leakage, negation/hashtag cleaning, padding/batch invariance, short/empty inputs, frozen gradients, independent Transformer layer initialization and saved predictions/metrics. `results/final_2026_10_16/verification.log` records the completed local run with all four model files available.
+Tests cover split/vocabulary leakage, negation/hashtag cleaning, padding/batch invariance, short/empty inputs, frozen gradients, independent Transformer layer initialization and saved predictions/metrics. The completed local verification log remains in the integration package until the combined evaluation is published.
 
-The final report is `reports/final/Final_Report_Disaster_Tweet_Classification.docx`; a Markdown version is included for repository reading. Report generation uses Python DOCX/Pillow dependencies from `requirements-report.txt`; the supplied scripts rebuild figures and the document from measured result files. The submitted DOCX was rendered and visually checked. Technical content is complete; the team still needs owner methodology review, confirmed name/role mapping, official Part C template if required, and actual contribution signatures/institutional checks. See `docs/SUBMISSION_CHECKLIST.md`.
+The final report and its Markdown version remain in the local integration package. After integration, they belong under `reports/final/`. Report generation uses Python DOCX/Pillow dependencies from `requirements-report.txt`; the supplied scripts rebuild figures and the document from measured result files. The submitted DOCX was rendered and visually checked. Technical content is complete; the team still needs owner methodology review, confirmed name/role mapping, official Part C template if required, and actual contribution signatures/institutional checks. See `docs/SUBMISSION_CHECKLIST.md`.
 
 ## Provenance and assistance
 

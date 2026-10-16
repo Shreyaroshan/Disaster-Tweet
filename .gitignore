@@ -18,6 +18,7 @@ data/embeddings/*.download
 /notebooks/
 /reports/*
 !/reports/final/
+!/reports/README.md
 /artifacts/*.csv
 /artifacts/config.json
 /src/select_mlp_accuracy.py

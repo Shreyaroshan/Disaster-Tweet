@@ -1,9 +1,0 @@
-lstm candidate_01_seed42: val accuracy=0.8219, F1=0.7807, epoch=6, seconds=21.4
-lstm candidate_02_seed42: val accuracy=0.8170, F1=0.7456, epoch=5, seconds=26.6
-lstm candidate_03_seed42: val accuracy=0.8121, F1=0.7467, epoch=7, seconds=39.3
-lstm candidate_04_seed42: val accuracy=0.8190, F1=0.7667, epoch=7, seconds=21.2
-lstm candidate_01_seed123: val accuracy=0.8151, F1=0.7605, epoch=4, seconds=18.0
-lstm candidate_01_seed2026: val accuracy=0.8151, F1=0.7555, epoch=9, seconds=28.1
-lstm candidate_04_seed123: val accuracy=0.8131, F1=0.7604, epoch=4, seconds=16.0
-lstm candidate_04_seed2026: val accuracy=0.8121, F1=0.7412, epoch=6, seconds=19.5
-SELECTED lstm {"ensemble": false, "threshold": 0.48, "accuracy": 0.8238747553816047, "precision": 0.780952380952381, "recall": 0.7884615384615384, "f1": 0.784688995215311, "roc_auc": 0.8791075621985276}
