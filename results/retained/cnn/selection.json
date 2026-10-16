@@ -1,0 +1,42 @@
+{
+  "model": "cnn",
+  "config": {
+    "batch_size": 64,
+    "learning_rate": 0.001,
+    "embedding_learning_rate": 0.0002,
+    "weight_decay": 0.01,
+    "epochs": 30,
+    "patience": 6,
+    "frozen": false,
+    "dropout": 0.5,
+    "filters": 64,
+    "kernels": [
+      2,
+      3,
+      4
+    ]
+  },
+  "threshold": 0.5,
+  "ensemble": false,
+  "validation": {
+    "accuracy": 0.8199608610567515,
+    "precision": 0.7761904761904762,
+    "recall": 0.7836538461538461,
+    "f1": 0.7799043062200957,
+    "roc_auc": 0.8697321655242447
+  },
+  "members": [
+    {
+      "path": "artifacts/models/cnn/historical.pt",
+      "sha256": "43ba729a89ec6d1d4af41e8c661ee32ec14755d1d41686ad24221e0c9338dfc9",
+      "seed": 42
+    }
+  ],
+  "parameters_per_model": 1266885,
+  "training_seconds": 19.29134333300317,
+  "selected_fit_seconds": 19.29134333300317,
+  "search_fits": null,
+  "origin": "Historical September validation-selected checkpoint; no tensor changes.",
+  "historical_selection_metric": "MLP architecture screened by F1 with validation accuracy refinement; CNN accuracy primary.",
+  "search_history": "archive/legacy_2026_10_16/experiments/cnn_improved_2026_09_18"
+}

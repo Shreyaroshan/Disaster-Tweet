@@ -1,0 +1,37 @@
+{
+  "model": "cnn",
+  "config": {
+    "batch_size": 64,
+    "learning_rate": 0.001,
+    "embedding_learning_rate": 0.0002,
+    "weight_decay": 0.01,
+    "epochs": 30,
+    "patience": 6,
+    "frozen": false,
+    "dropout": 0.5,
+    "filters": 64,
+    "kernels": [
+      2,
+      3,
+      4
+    ]
+  },
+  "seed": 2026,
+  "best_epoch": 4,
+  "epochs_run": 10,
+  "training_seconds": 19.417168250016402,
+  "parameters": 1266885,
+  "trainable_parameters": 1266885,
+  "validation": {
+    "accuracy": 0.815068493150685,
+    "precision": 0.7683215130023641,
+    "recall": 0.78125,
+    "f1": 0.7747318235995232,
+    "roc_auc": 0.8706028655750191
+  },
+  "device": "cpu",
+  "threads": 4,
+  "python": "3.13.1",
+  "torch": "2.14.0",
+  "checkpoint_sha256": "ae2ff13b8cf83dbe8b5c314a0cf27e859b6ff0bab1102196e5c1a0daa221bb86"
+}
