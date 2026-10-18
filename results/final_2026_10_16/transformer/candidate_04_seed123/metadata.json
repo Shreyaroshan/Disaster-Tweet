@@ -1,0 +1,35 @@
+{
+  "model": "transformer",
+  "config": {
+    "batch_size": 64,
+    "learning_rate": 0.0005,
+    "embedding_learning_rate": 0.0002,
+    "weight_decay": 0.01,
+    "epochs": 30,
+    "patience": 6,
+    "frozen": true,
+    "dropout": 0.3,
+    "d_model": 128,
+    "heads": 4,
+    "layers": 1,
+    "feedforward": 256
+  },
+  "seed": 123,
+  "best_epoch": 4,
+  "epochs_run": 10,
+  "training_seconds": 12.088680375018157,
+  "parameters": 1371333,
+  "trainable_parameters": 162433,
+  "validation": {
+    "accuracy": 0.8111545988258317,
+    "precision": 0.8348348348348348,
+    "recall": 0.6682692307692307,
+    "f1": 0.7423230974632844,
+    "roc_auc": 0.8715112496826605
+  },
+  "device": "cpu",
+  "threads": 4,
+  "python": "3.13.1",
+  "torch": "2.14.0",
+  "checkpoint_sha256": "a19b2873f6dc9e5e5348c5e35f7afc7d9b393f4168454b51ca9c88f7b5aae65b"
+}
