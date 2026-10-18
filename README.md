@@ -32,9 +32,6 @@ artifacts/models/              Local weights; manifests uploaded by each member
  tests/                        Shared behavior and artifact verification
 ```
 
-## Team upload plan
-
-The administrator pushes the archive and shared infrastructure. Each assigned member reviews and pushes their model implementation, selected config, model card, model-specific results and artifact manifest. The combined evaluation and final report are uploaded after all four contributions are integrated. Until then, training that model reports an awaiting-upload message; integration tests that require missing modules are skipped. All four implementations were run and verified locally before packaging.
 
 | Assigned reviewer | Model | Upload scope |
 |---|---|---|
@@ -98,12 +95,3 @@ Tests cover split/vocabulary leakage, negation/hashtag cleaning, padding/batch i
 
 The final report and its Markdown version remain in the local integration package. After integration, they belong under `reports/final/`. Report generation uses Python DOCX/Pillow dependencies from `requirements-report.txt`; the supplied scripts rebuild figures and the document from measured result files. The submitted DOCX was rendered and visually checked. Technical content is complete; the team still needs owner methodology review, confirmed name/role mapping, official Part C template if required, and actual contribution signatures/institutional checks. See `docs/SUBMISSION_CHECKLIST.md`.
 
-## Provenance and assistance
-
-Original dataset: https://www.kaggle.com/competitions/nlp-getting-started/data
-
-Pinned mirror and SHA-256 checksums: `data/raw/provenance.json`; processed split manifest: `data/processed/manifest.json`; vector provenance: `data/embeddings/provenance.json`. GloVe source: https://nlp.stanford.edu/projects/glove/ under PDDL. The integrated literature review cites 13 papers plus the dataset.
-
-AI assistance covered implementation, experiments, tests and report drafting. Each member must review, understand, reproduce/adapt and document their actual work. See `docs/AI_ASSISTANCE.md`. Earlier test reuse, label ambiguity and unequal historical search budgets are disclosed rather than presented as an independent benchmark. The guideline presentations are 26–29 October 2026, with report/code due 31 October 2026.
-
-Local legacy working copies may remain ignored while an existing CNN command finishes. They are archived in Git and are not the active shared implementation.
