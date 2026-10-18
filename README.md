@@ -4,8 +4,6 @@ Four architecture families classify disaster-related tweets using one shared cle
 
 ## Results publication
 
-Each assigned member uploads their model-specific results alongside their model, selected configuration and methodology card. The already measured combined comparison and final report remain local until all four contributions are integrated. Historical results remain available in the archive and in earlier Git history.
-
 All four models have been run locally on the same 1,023-tweet test split. These measurements are exploratory because that split was reused across project iterations. The selected encoder-only Transformer uses frozen GloVe input vectors with attention trained on this dataset; it is not pretrained BERT.
 
 ## Repository layout
@@ -40,7 +38,6 @@ artifacts/models/              Local weights; manifests uploaded by each member
 | Member 3 | Encoder-only Transformer | `src/disaster_tweets/models/transformer.py`, `configs/transformer.json`, `docs/models/transformer.md`, model-specific results and artifact manifest |
 | Member 4 | LSTM | `src/disaster_tweets/models/lstm.py`, `configs/lstm.json`, `docs/models/lstm.md`, model-specific results and artifact manifest |
 
-See `docs/TEAM_HANDOFF.md`. The local `handoff` folder contains four ZIP packages. The old three MLP improve/select/report scripts are superseded by this modular structure. Name-to-member mapping needs team confirmation; generated implementation and actual member contributions must be distinguished. No member commits or signatures are fabricated.
 
 ## Setup and preparation
 
@@ -58,7 +55,7 @@ Cleaning decodes HTML, lowercases, replaces URLs/mentions and preserves hashtag 
 
 ## Train and evaluate
 
-After the assigned member has copied/pushed the model module and selected config:
+After the assigned member has pushed the model module and selected config:
 
 ```bash
 ./.venv/bin/python src/train.py --model mlp --run member2_mlp_review
@@ -85,13 +82,5 @@ The local selected final weights can be used with:
 
 Weights are excluded from Git, so a fresh clone must train models locally. Member handoffs include final predictions and unsubmitted Kaggle submission CSVs for audit; they are not Kaggle leaderboard scores.
 
-## Verification and report
 
-```bash
-./.venv/bin/python -m unittest discover -s tests -p test_shared_pipeline.py -v
-```
-
-Tests cover split/vocabulary leakage, negation/hashtag cleaning, padding/batch invariance, short/empty inputs, frozen gradients, independent Transformer layer initialization and saved predictions/metrics. The completed local verification log remains in the integration package until the combined evaluation is published.
-
-The final report and its Markdown version remain in the local integration package. After integration, they belong under `reports/final/`. Report generation uses Python DOCX/Pillow dependencies from `requirements-report.txt`; the supplied scripts rebuild figures and the document from measured result files. The submitted DOCX was rendered and visually checked. Technical content is complete; the team still needs owner methodology review, confirmed name/role mapping, official Part C template if required, and actual contribution signatures/institutional checks. See `docs/SUBMISSION_CHECKLIST.md`.
 
