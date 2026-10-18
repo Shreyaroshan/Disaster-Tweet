@@ -1,0 +1,20 @@
+{
+  "model": "lstm",
+  "members": [
+    {
+      "path": "artifacts/models/lstm/seed_42.pt",
+      "sha256": "992655484758c2ff6fe5d2a26e4a240e7295d8d3fbe04ff40dcfe3d8da29110f",
+      "seed": 42
+    }
+  ],
+  "threshold": 0.48,
+  "validation": {
+    "ensemble": false,
+    "threshold": 0.48,
+    "accuracy": 0.8238747553816047,
+    "precision": 0.780952380952381,
+    "recall": 0.7884615384615384,
+    "f1": 0.784688995215311,
+    "roc_auc": 0.8791075621985276
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "model": "lstm",
+  "config": {
+    "batch_size": 64,
+    "learning_rate": 0.001,
+    "embedding_learning_rate": 0.0002,
+    "weight_decay": 0.01,
+    "epochs": 30,
+    "patience": 6,
+    "frozen": false,
+    "dropout": 0.4,
+    "hidden": 64,
+    "layers": 1
+  },
+  "seed": 2026,
+  "best_epoch": 9,
+  "epochs_run": 15,
+  "training_seconds": 28.137850540981162,
+  "parameters": 1310917,
+  "trainable_parameters": 1310917,
+  "validation": {
+    "accuracy": 0.815068493150685,
+    "precision": 0.8179271708683473,
+    "recall": 0.7019230769230769,
+    "f1": 0.7554980595084088,
+    "roc_auc": 0.8760888709063215
+  },
+  "device": "cpu",
+  "threads": 4,
+  "python": "3.13.1",
+  "torch": "2.14.0",
+  "checkpoint_sha256": "51dfa3cb4c655059f69d79aec5ecb082abf754d61bd41708caeba1a0d968c73a"
+}
