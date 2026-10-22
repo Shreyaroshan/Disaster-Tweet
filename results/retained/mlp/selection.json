@@ -1,0 +1,37 @@
+{
+  "model": "mlp",
+  "config": {
+    "batch_size": 64,
+    "learning_rate": 0.001,
+    "embedding_learning_rate": 0.0002,
+    "weight_decay": 0.01,
+    "epochs": 40,
+    "patience": 7,
+    "frozen": false,
+    "dropout": 0.5,
+    "hidden": 128
+  },
+  "threshold": 0.49,
+  "ensemble": false,
+  "validation": {
+    "accuracy": 0.8180039138943248,
+    "precision": 0.8074866310160428,
+    "recall": 0.7259615384615384,
+    "f1": 0.7645569620253164,
+    "roc_auc": 0.8693692085554708
+  },
+  "members": [
+    {
+      "path": "artifacts/models/mlp/historical.pt",
+      "sha256": "1c119ead17332e64a04b0a0173eba92c759c8f1e604bfb741d9f94773b1da53c",
+      "seed": 42
+    }
+  ],
+  "parameters_per_model": 1235157,
+  "training_seconds": 9.325196915997367,
+  "selected_fit_seconds": 9.325196915997367,
+  "search_fits": null,
+  "origin": "Historical September validation-selected checkpoint; no tensor changes.",
+  "historical_selection_metric": "MLP architecture screened by F1 with validation accuracy refinement; CNN accuracy primary.",
+  "search_history": "archive/legacy_2026_10_16/experiments/mlp_improved_2026_09_18"
+}
